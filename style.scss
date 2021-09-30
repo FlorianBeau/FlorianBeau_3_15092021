@@ -1,7 +1,23 @@
-header {
-  background-color: yellow;
+.center {
+  text-align: center;
 }
 
-body {
-  color: rgb(58, 29, 92);
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.fas.fa-map-marker-alt::before {
+  line-height: 3;
+  padding-right: 15px;
+}
+
+// FONT //
+
+* {
+  font-family: "Roboto", sans-serif;
 }
