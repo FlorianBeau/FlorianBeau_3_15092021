@@ -2,13 +2,25 @@
   text-align: center;
 }
 
-.flex {
+.bold {
+  font-weight: bold;
+}
+
+.background-light-gray {
+  background-color: #f2f2f2;
+}
+
+.button-explore {
   display: flex;
+  justify-content: center;
+  border: solid 1px black;
+  height: 3.5em;
   flex-direction: column;
 }
 
-.bold {
-  font-weight: bold;
+.flex-section1 {
+  display: flex;
+  justify-content: center;
 }
 
 .fas.fa-map-marker-alt::before {
