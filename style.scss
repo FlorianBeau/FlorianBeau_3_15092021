@@ -1,21 +1,42 @@
-.center {
-  text-align: center;
-}
-
 .bold {
   font-weight: bold;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .background-light-gray {
   background-color: #f2f2f2;
 }
 
-.button-explore {
+#div-button-explorer {
   display: flex;
-  justify-content: center;
-  border: solid 1px black;
-  height: 3.5em;
   flex-direction: column;
+  align-items: center;
+}
+
+.button-explore {
+  width: 250px;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  background: linear-gradient(#ff79da, #9356dc);
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+.button-explore a:hover {
+  background: #ff79da;
+}
+
+.button-explore-color {
+  color: white;
+  text-decoration: none;
 }
 
 .flex-section1 {
