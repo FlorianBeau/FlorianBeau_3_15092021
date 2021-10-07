@@ -37,12 +37,26 @@
   justify-content: center;
   align-items: center;
   box-shadow: 0px 0px 7px 0px #0000002e;
+  width: 21em;
 }
 
 .div-restaurants {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+h2 {
+  width: 12.5em;
+}
+
+.new {
+  height: 30px;
+  width: 90px;
+  background-color: #99e2d0;
+  color: #139273;
+  text-align: center;
+  padding-top: 10px;
 }
 
 .round-icon {
@@ -52,7 +66,7 @@
   border-radius: 100%;
   color: white;
   text-align: center;
-  margin: 0px 24px 0px -30px;
+  margin: 0px 24px 0px -83px;
 }
 
 .round-icon2 {
@@ -62,7 +76,7 @@
   border-radius: 100%;
   color: white;
   text-align: center;
-  margin: 0px 20px 0px -44px;
+  margin: 0px 20px 0px -95px;
 }
 
 .round-icon3 {
@@ -72,7 +86,7 @@
   border-radius: 100%;
   color: white;
   text-align: center;
-  margin: 0px 20px 0px -39px;
+  margin: 0px 20px 0px -91px;
 }
 
 .images-restaurants {
@@ -93,13 +107,13 @@
 
 .fas.fa-list-ul::before {
   color: #7e7e7e;
-  margin: 50px 23px 10px 2px;
+  margin: 50px 16px 10px 2px;
   font-size: 20px;
 }
 
 .fas.fa-store::before {
   color: #9356dc;
-  margin: 50px 20px 10px 0px;
+  margin: 50px 17px 10px 0px;
   font-size: 20px;
 }
 
@@ -112,6 +126,7 @@
 #section2-fonctionnement {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 #section2-fonctionnement p {
