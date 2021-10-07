@@ -19,10 +19,48 @@
   margin: 10px 0px;
 }
 
+.image1-background {
+  background-image: url("Maquettes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  height: 200px;
+  width: 300px;
+  background-size: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.image2-background {
+  background-image: url("Maquettes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+  height: 200px;
+  width: 300px;
+  background-size: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.image3-background {
+  background-image: url("Maquettes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  height: 200px;
+  width: 300px;
+  background-size: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.image4-background {
+  background-image: url("Maquettes Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  height: 200px;
+  width: 300px;
+  background-size: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
 .card-restaurant {
   background-color: white;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
   margin: 10px 0px;
 }
 
@@ -37,7 +75,7 @@
   justify-content: center;
   align-items: center;
   box-shadow: 0px 0px 7px 0px #0000002e;
-  width: 21em;
+  width: 18em;
 }
 
 .div-restaurants {
@@ -54,9 +92,12 @@ h2 {
   height: 30px;
   width: 90px;
   background-color: #99e2d0;
-  color: #139273;
+  color: #008766;
   text-align: center;
   padding-top: 10px;
+  border-radius: 4px;
+  margin: 11px;
+  float: right;
 }
 
 .round-icon {
@@ -66,7 +107,7 @@ h2 {
   border-radius: 100%;
   color: white;
   text-align: center;
-  margin: 0px 24px 0px -83px;
+  margin: 0px 22px 0px -33px;
 }
 
 .round-icon2 {
@@ -76,7 +117,7 @@ h2 {
   border-radius: 100%;
   color: white;
   text-align: center;
-  margin: 0px 20px 0px -95px;
+  margin: 0px 20px 0px -49px;
 }
 
 .round-icon3 {
@@ -86,7 +127,7 @@ h2 {
   border-radius: 100%;
   color: white;
   text-align: center;
-  margin: 0px 20px 0px -91px;
+  margin: 0px 20px 0px -44px;
 }
 
 .images-restaurants {
@@ -101,26 +142,26 @@ h2 {
 
 .fas.fa-mobile-alt::before {
   color: #7e7e7e;
-  margin: 0px 25px 10px 0px;
+  margin: 0px 27px 10px 0px;
   font-size: 20px;
 }
 
 .fas.fa-list-ul::before {
   color: #7e7e7e;
-  margin: 50px 16px 10px 2px;
+  margin: 50px 24px 10px 0px;
   font-size: 20px;
 }
 
 .fas.fa-store::before {
   color: #9356dc;
-  margin: 50px 17px 10px 0px;
+  margin: 50px 20px 10px 0px;
   font-size: 20px;
 }
 
 .background-fonctionnement {
   background-color: #f6f6f6;
   border-radius: 25px;
-  margin: 10px 10px;
+  margin: 10px 0px;
 }
 
 #section2-fonctionnement {
@@ -174,4 +215,22 @@ h2 {
 
 * {
   font-family: "Roboto", sans-serif;
+}
+
+// FOOTER
+
+footer {
+  background-color: #353535;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+footer h3 {
+  font-style: italic;
+  padding-left: 10px;
+}
+
+footer .fa p {
+  padding-left: 10px;
 }
