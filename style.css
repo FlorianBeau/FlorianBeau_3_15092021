@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 .bold {
   font-weight: bold;
 }
@@ -16,13 +20,14 @@
 
 .background-card {
   background-color: #f6f6f6;
-  margin: 10px 0px;
+  margin-top: 10px;
+  padding-bottom: 50px;
 }
 
 .image1-background {
   background-image: url("Maquettes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   height: 200px;
-  width: 300px;
+  width: 100%;
   background-size: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -31,7 +36,7 @@
 .image2-background {
   background-image: url("Maquettes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
   height: 200px;
-  width: 300px;
+  width: 100%;
   background-size: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -40,7 +45,7 @@
 .image3-background {
   background-image: url("Maquettes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
   height: 200px;
-  width: 300px;
+  width: 100%;
   background-size: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -49,7 +54,7 @@
 .image4-background {
   background-image: url("Maquettes Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
   height: 200px;
-  width: 300px;
+  width: 100%;
   background-size: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -62,6 +67,8 @@
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   margin: 10px 0px;
+  width: 100%;
+  max-width: 300px;
 }
 
 #div-button-explorer {
@@ -74,18 +81,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 0px 7px 0px #0000002e;
-  width: 18em;
+  box-shadow: 0px 4px 7px -1px #0000002e;
+  width: 16.5em;
 }
 
 .div-restaurants {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 15px;
+  width: calc(100% - 30px);
 }
 
 h2 {
-  width: 12.5em;
+  width: calc(100% - 30px);
 }
 
 .new {
@@ -107,7 +116,7 @@ h2 {
   border-radius: 100%;
   color: white;
   text-align: center;
-  margin: 0px 22px 0px -33px;
+  margin: 0px 0px 0px -36px;
 }
 
 .round-icon2 {
@@ -142,7 +151,7 @@ h2 {
 
 .fas.fa-mobile-alt::before {
   color: #7e7e7e;
-  margin: 0px 27px 10px 0px;
+  margin: 0px 17px 10px 14px;
   font-size: 20px;
 }
 
@@ -160,7 +169,7 @@ h2 {
 
 .background-fonctionnement {
   background-color: #f6f6f6;
-  border-radius: 25px;
+  border-radius: 17px;
   margin: 10px 0px;
 }
 
@@ -204,6 +213,22 @@ h2 {
 .flex-section1 {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.flex-section3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.div-texte {
+  width: calc(100% - 85px);
+}
+
+.icone-heart {
+  height: 85px;
+  width: 85px;
 }
 
 .fas.fa-map-marker-alt::before {
@@ -215,20 +240,37 @@ h2 {
   font-family: "Roboto", sans-serif;
 }
 
+footer h4 {
+  font-family: "Shrikhand", sans-serif;
+}
+
 footer {
   background-color: #353535;
   color: #ffffff;
   display: flex;
   flex-direction: column;
+  padding: 7%;
 }
 
-footer h3 {
-  font-style: italic;
-  padding-left: 10px;
+footer h4 {
+  font-style: normal;
+  font-weight: 100;
+  font-size: 1.17em;
+  margin: 0;
+  margin-bottom: 15px;
 }
 
-footer .fa p {
-  padding-left: 10px;
+.fas.fa-utensils::before {
+  margin-left: 4px;
+  margin-right: 12px;
+}
+
+.fas.fa-hands-helping::before {
+  margin-right: 10px;
+}
+
+.far.fa-heart::before {
+  font-size: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
