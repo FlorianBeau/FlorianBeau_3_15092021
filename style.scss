@@ -1,9 +1,31 @@
+// GENERAL //
+
 body {
   margin: 0;
 }
 
 .bold {
   font-weight: bold;
+}
+
+.logo {
+  margin: 20px 0px;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  width: calc(100% - 30px);
+  padding-top: 20px;
+}
+
+// AUTRES PARTIES //
+
+.background-dark-gray {
+  background-color: #eaeaea;
+  box-shadow: -1px -1px 3px 1px #0000002e;
 }
 
 .text-center {
@@ -75,6 +97,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 6px;
 }
 
 .div-fonctionnement {
@@ -82,7 +105,8 @@ body {
   justify-content: center;
   align-items: center;
   box-shadow: 0px 4px 7px -1px #0000002e;
-  width: 16.5em;
+  width: 15em;
+  height: 4em;
 }
 
 .div-restaurants {
@@ -90,10 +114,6 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 0 15px;
-  width: calc(100% - 30px);
-}
-
-h2 {
   width: calc(100% - 30px);
 }
 
@@ -116,7 +136,9 @@ h2 {
   border-radius: 100%;
   color: white;
   text-align: center;
-  margin: 0px 0px 0px -36px;
+  margin: 0px 11px 0px -25px;
+  justify-content: center;
+  align-items: center;
 }
 
 .round-icon2 {
@@ -126,7 +148,9 @@ h2 {
   border-radius: 100%;
   color: white;
   text-align: center;
-  margin: 0px 20px 0px -49px;
+  margin: 0px 20px 0px -36px;
+  justify-content: center;
+  align-items: center;
 }
 
 .round-icon3 {
@@ -136,7 +160,9 @@ h2 {
   border-radius: 100%;
   color: white;
   text-align: center;
-  margin: 0px 20px 0px -44px;
+  margin: 0px 17px 0px -31px;
+  justify-content: center;
+  align-items: center;
 }
 
 .images-restaurants {
@@ -151,20 +177,29 @@ h2 {
 
 .fas.fa-mobile-alt::before {
   color: #7e7e7e;
-  margin: 0px 17px 10px 14px;
+  margin: 0px 7px 10px 7px;
   font-size: 20px;
+}
+
+#div-button-explorer p {
+  margin: 0px 12px 25px 12px;
 }
 
 .fas.fa-list-ul::before {
   color: #7e7e7e;
-  margin: 50px 24px 10px 0px;
+  margin: 50px 4px 10px -3px;
   font-size: 20px;
 }
 
 .fas.fa-store::before {
-  color: #9356dc;
-  margin: 50px 20px 10px 0px;
+  color: #7e7e7e;
+  margin: 50px 2px 10px -2px;
   font-size: 20px;
+}
+
+.div-fonctionnement:hover {
+  background-color: #f5edff;
+  cursor: pointer;
 }
 
 .background-fonctionnement {
@@ -177,11 +212,17 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 40px;
 }
 
 #section2-fonctionnement p {
   font-weight: bold;
-  font-size: 17px;
+  font-size: 14px;
+  padding: 0 15px;
+}
+
+p {
+  font-size: 14px;
 }
 
 #icone-menu {
@@ -189,7 +230,7 @@ h2 {
 }
 
 .button-explore {
-  width: 250px;
+  width: 200px;
   line-height: 50px;
   text-align: center;
   vertical-align: middle;
@@ -198,6 +239,7 @@ h2 {
   border-radius: 25px;
   margin-bottom: 3em;
   box-shadow: 0px 0px 7px 0px #0000002e;
+  cursor: pointer;
 }
 
 .button-explore:hover {
@@ -220,15 +262,25 @@ h2 {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 60px;
+  margin: 0 10px;
 }
 
-.div-texte {
-  width: calc(100% - 85px);
+.div-texte h3 {
+  font-size: 1em;
+  margin: 0;
+}
+
+.div-texte p {
+  margin: 0;
 }
 
 .icone-heart {
   height: 85px;
   width: 85px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
 }
 
 .fas.fa-map-marker-alt::before {
@@ -256,12 +308,16 @@ footer {
   padding: 7%;
 }
 
+footer p {
+  margin: 5px;
+}
+
 footer h4 {
   font-style: normal;
   font-weight: 100;
   font-size: 1.17em;
   margin: 0;
-  margin-bottom: 15px;
+  margin: 0px 7px 15px 7px;
 }
 
 .fas.fa-utensils::before {
