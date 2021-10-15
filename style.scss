@@ -1,30 +1,85 @@
 // GENERAL //
-
-body {
-  margin: 0;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-.logo {
-  margin: 20px 0px;
-}
-
 h1 {
   font-size: 1.5em;
 }
-
 h2 {
   width: calc(100% - 30px);
   padding-top: 20px;
 }
 
+// Couleurs //
+$primaire: #9356dc;
+$secondaire: #ff79da;
+$tertiaire: #99e2d0;
+$light-grey: #f6f6f6;
+$dark-grey: #eaeaea;
+$icon-colors: #7e7e7e;
+$white-color: #ffffff;
+$background-footer: #353535;
+
+// LOGO //
+
+.logo {
+  margin: 20px 0px;
+}
+
+// FONT //
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+footer h4 {
+  font-family: "Shrikhand", sans-serif;
+}
+
+// ICONES //
+
+.fas {
+  .fa-utensils::before {
+    margin-left: 4px;
+    margin-right: 12px;
+  }
+
+  .fa-hands-helping::before {
+    margin-right: 10px;
+  }
+
+  .fa-mobile-alt::before {
+    color: $icon-colors;
+    margin: 0px 7px 10px 7px;
+    font-size: 20px;
+  }
+
+  .fa-list-ul::before {
+    $icon-colors: #7e7e7e;
+    margin: 50px 4px 10px -3px;
+    font-size: 20px;
+  }
+
+  .fa-map-marker-alt::before {
+    line-height: 3;
+    padding-right: 15px;
+  }
+
+  .far.fa-heart::before {
+    font-size: 25px;
+  }
+}
+
+// BODY //
+
+body {
+  margin: 0;
+  .bold {
+    font-weight: bold;
+  }
+}
+
 // AUTRES PARTIES //
 
 .background-dark-gray {
-  background-color: #eaeaea;
+  $dark-grey: #eaeaea;
   box-shadow: -1px -1px 3px 1px #0000002e;
 }
 
@@ -37,11 +92,11 @@ h2 {
 }
 
 .background-light-gray {
-  background-color: #f6f6f6;
+  $light-grey: #f6f6f6;
 }
 
 .background-card {
-  background-color: #f6f6f6;
+  $light-grey: #f6f6f6;
   margin-top: 10px;
   padding-bottom: 50px;
 }
@@ -120,7 +175,7 @@ h2 {
 .new {
   height: 30px;
   width: 90px;
-  background-color: #99e2d0;
+  $tertiaire: #99e2d0;
   color: #008766;
   text-align: center;
   padding-top: 10px;
@@ -132,7 +187,7 @@ h2 {
 .round-icon {
   height: 25px;
   width: 25px;
-  background-color: #9356dc;
+  $primaire: #9356dc;
   border-radius: 100%;
   color: white;
   text-align: center;
@@ -144,7 +199,7 @@ h2 {
 .round-icon2 {
   height: 25px;
   width: 25px;
-  background-color: #9356dc;
+  $primaire: #9356dc;
   border-radius: 100%;
   color: white;
   text-align: center;
@@ -156,7 +211,7 @@ h2 {
 .round-icon3 {
   height: 25px;
   width: 25px;
-  background-color: #9356dc;
+  $primaire: #9356dc;
   border-radius: 100%;
   color: white;
   text-align: center;
@@ -185,7 +240,7 @@ h2 {
 }
 
 .background-fonctionnement {
-  background-color: #f6f6f6;
+  $light-grey: #f6f6f6;
   border-radius: 17px;
   margin: 10px 0px;
 }
@@ -216,7 +271,7 @@ p {
   line-height: 50px;
   text-align: center;
   vertical-align: middle;
-  background: linear-gradient(#ff79da, #9356dc);
+  background: linear-gradient($secondaire, $primaire);
   text-decoration: none;
   border-radius: 25px;
   margin-bottom: 3em;
@@ -225,7 +280,7 @@ p {
 }
 
 .button-explore:hover {
-  background: linear-gradient(#9356dc, #ff79da);
+  background: linear-gradient($primaire, $secondaire);
   box-shadow: 0px 0px 7px 0px #0000002e;
 }
 
@@ -265,64 +320,20 @@ p {
   align-items: center;
 }
 
-// FONT //
-
-* {
-  font-family: "Roboto", sans-serif;
-}
-
-footer h4 {
-  font-family: "Shrikhand", sans-serif;
-}
-
 // FOOTER
 
 footer {
-  background-color: #353535;
-  color: #ffffff;
+  $background-footer: #353535;
+  $white-color: #ffffff;
   display: flex;
   flex-direction: column;
   padding: 7%;
-}
 
-footer p {
-  margin: 5px;
-}
-
-footer h4 {
-  font-style: normal;
-  font-weight: 100;
-  font-size: 1.17em;
-  margin: 0;
-  margin: 0px 7px 15px 7px;
-}
-
-// Icones //
-
-.fas {
-  &.fa-utensils::before
-    margin-left: 4px
-    margin-right; 12px {
-
-  &.fa-hands-helping::before
-    margin-right: 10px {
-
-  &.fa-mobile-alt::before
-    color: #7e7e7e
-    margin: 0px 7px 10px 7px
-    font-size: 20px {
-
-  &.fa-list-ul::before
-    color: #7e7e7e
-    margin: 50px 4px 10px -3px
-    font-size: 20px {
-
-  &.fa-map-marker-alt::before
-    line-height: 3
-    padding-right: 15px {
-
-  &.far.fa-heart::before
-    font-size: 25px {
-  
+  h4 {
+    font-style: normal;
+    font-weight: 100;
+    font-size: 1.17em;
+    margin: 0;
+    margin: 0px 7px 15px 7px;
   }
-
+}
