@@ -1,3 +1,7 @@
-@import "./sass/menus-restaurants.scss";
-@import "./sass/style.scss";
+@import "./composants/buttons";
 @import "./utils/variables";
+@import "./utils/mixins";
+@import "./layout/footer";
+@import "./sass/style";
+@import "./base/font";
+@import "./sass/menus-restaurants";
