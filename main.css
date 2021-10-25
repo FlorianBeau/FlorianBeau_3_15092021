@@ -1,18 +1,181 @@
-/* Error: expected "{".
- *    ,
- * 25 | @mixin button-explore: hover {
- *    |                      ^
- *    '
- *   composants\_buttons.scss 25:22  @import
- *   main.scss 1:9                   root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a    \2577 \a 25 \2502  @mixin button-explore: hover {\d\a    \2502                       ^\a    \2575 \a   composants\\_buttons.scss 25:22  @import\a   main.scss 1:9                   root stylesheet';
+body {
+  margin: 0;
+  box-shadow: -1px -1px 3px 1px #0000002e;
 }
+body h1 {
+  font-size: 1.5em;
+}
+body h2 {
+  width: calc(100% - 30px);
+  padding-top: 20px;
+}
+body .bold {
+  font-weight: bold;
+}
+body p {
+  font-size: 14px;
+}
+body .fas .fa-utensils::before {
+  margin-left: 4px;
+  margin-right: 12px;
+}
+body .fas .fa-hands-helping::before {
+  margin-right: 10px;
+}
+body .fas .fa-mobile-alt::before {
+  color: #7e7e7e;
+  margin: 0px 7px 10px 7px;
+  font-size: 20px;
+}
+body .fas .fa-list-ul::before {
+  color: #7e7e7e;
+  margin: 50px 4px 10px -3px;
+  font-size: 20px;
+}
+body .fas .fa-map-marker-alt::before {
+  line-height: 3;
+  padding-right: 15px;
+}
+body .fas .far.fa-heart::before {
+  font-size: 25px;
+}
+body header {
+  text-align: center;
+}
+body header .logo {
+  margin: 20px 0px;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 6px;
+}
+body main p {
+  margin: 0px 12px 25px 12px;
+}
+body main .section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -1px -1px 3px 1px #0000002e;
+  text-align: center;
+  background-color: #f6f6f6;
+}
+body main .section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 7px -1px #0000002e;
+  width: 15em;
+  height: 4em;
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+  color: white;
+  text-align: center;
+  margin: 0px 11px 0px -25px;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+  color: white;
+  text-align: center;
+  margin: 0px 20px 0px -36px;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+  color: white;
+  text-align: center;
+  margin: 0px 17px 0px -31px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+}
+body main .section2 :hover {
+  background-color: #f5edff;
+  cursor: pointer;
+}
+body main .section2 p {
+  font-weight: bold;
+  font-size: 14px;
+  padding: 0 15px;
+}
+body main .section3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  margin: 0 10px;
+  margin-top: 10px;
+  padding-bottom: 50px;
+  background-image: url("/images/la-palette-du-gout.jpg");
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-image: url("/images/la-note-enchantee.jpg");
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-image: url("/images/a-la-francaise.jpg");
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-image: url("/images/le-delice-des-sens.jpg");
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin: 10px 0px;
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
+  width: calc(100% - 30px);
+  height: 30px;
+  width: 90px;
+  color: #008766;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 4px;
+  margin: 11px;
+  float: right;
+}
+body main .section3 h3 {
+  font-size: 1em;
+  margin: 0;
+}
+body main .section3 p {
+  margin: 0;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 h2 h3 h4 {
+  font-family: "Shrikhand", sans-serif;
+}
+
+/*# sourceMappingURL=main.css.map */

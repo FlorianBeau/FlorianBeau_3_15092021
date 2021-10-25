@@ -1,39 +1,18 @@
-// GENERAL //
-h1 {
-  font-size: 1.5em;
-}
-h2 {
-  width: calc(100% - 30px);
-  padding-top: 20px;
-}
-
-////////////////////// DEBUT ////////////////////////////////////
-
 body {
-  header {
-    .logo {
-      margin: 20px 0px;
-    }
+  h1 {
+    font-size: 1.5em;
   }
-
+  h2 {
+    width: calc(100% - 30px);
+    padding-top: 20px;
+  }
   margin: 0;
-
   .bold {
     font-weight: bold;
   }
-
-  main {
-    .section1 {
-      @include flex-section1;
-
-      .div-button-explorer {
-        @include div-button-explorer;
-      }
-    }
-
-    .section3 {
-      @include flex-section3;
-    }
+  @include background-dark-gray;
+  p {
+    font-size: 14px;
   }
 
   // ICONES //
@@ -69,11 +48,43 @@ body {
       font-size: 25px;
     }
   }
+
+  header {
+    .logo {
+      margin: 20px 0px;
+    }
+    @include text-center;
+  }
+  main {
+    @include div-button-explorer;
+    .section1 {
+      @include flex-section1;
+      @include background-dark-gray;
+      @include text-center;
+      @include background-light-gray;
+    }
+    .section2 {
+      @include div-fonctionnement;
+      @include round-icon;
+      @include round-icon2;
+      @include round-icon3;
+      @include flex;
+      @include section2-fonctionnement;
+    }
+    .section3 {
+      @include flex-section3;
+      @include background-card;
+      @include image1-background;
+      @include image2-background;
+      @include image3-background;
+      @include image4-background;
+      @include card-restaurant;
+      @include div-restaurants;
+      @include new;
+      @include div-texte;
+    }
+  }
 }
 
-// AUTRES PARTIES //
-
-// Footer //
 footer {
-  @include footer;
 }
