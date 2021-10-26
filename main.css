@@ -1,145 +1,87 @@
-body {
-  margin: 0;
-  box-shadow: -1px -1px 3px 1px #0000002e;
-}
-body h1 {
+h1 {
   font-size: 1.5em;
 }
-body h2 {
+
+h2 {
   width: calc(100% - 30px);
   padding-top: 20px;
 }
-body .bold {
+
+.bold {
   font-weight: bold;
 }
-body p {
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+p {
   font-size: 14px;
 }
-body .fas .fa-utensils::before {
-  margin-left: 4px;
-  margin-right: 12px;
+
+* {
+  font-family: "Roboto", sans-serif;
 }
-body .fas .fa-hands-helping::before {
-  margin-right: 10px;
+
+footer h4 {
+  font-family: "Shrikhand", sans-serif;
 }
-body .fas .fa-mobile-alt::before {
-  color: #7e7e7e;
-  margin: 0px 7px 10px 7px;
-  font-size: 20px;
-}
-body .fas .fa-list-ul::before {
-  color: #7e7e7e;
-  margin: 50px 4px 10px -3px;
-  font-size: 20px;
-}
-body .fas .fa-map-marker-alt::before {
-  line-height: 3;
-  padding-right: 15px;
-}
-body .fas .far.fa-heart::before {
-  font-size: 25px;
-}
-body header {
-  text-align: center;
+
+body {
+  margin: 0;
 }
 body header .logo {
   margin: 20px 0px;
 }
-body main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 6px;
-}
-body main p {
-  margin: 0px 12px 25px 12px;
-}
-body main .section1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: -1px -1px 3px 1px #0000002e;
-  text-align: center;
+body .background-light-gray {
   background-color: #f6f6f6;
 }
-body main .section2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0px 4px 7px -1px #0000002e;
-  width: 15em;
-  height: 4em;
-  height: 25px;
-  width: 25px;
-  border-radius: 100%;
-  color: white;
-  text-align: center;
-  margin: 0px 11px 0px -25px;
-  justify-content: center;
-  align-items: center;
-  height: 25px;
-  width: 25px;
-  border-radius: 100%;
-  color: white;
-  text-align: center;
-  margin: 0px 20px 0px -36px;
-  justify-content: center;
-  align-items: center;
-  height: 25px;
-  width: 25px;
-  border-radius: 100%;
-  color: white;
-  text-align: center;
-  margin: 0px 17px 0px -31px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 40px;
+body .background-dark-gray {
+  background-color: #eaeaea;
+  box-shadow: -1px -1px 3px 1px #0000002e;
 }
-body main .section2 :hover {
-  background-color: #f5edff;
-  cursor: pointer;
-}
-body main .section2 p {
-  font-weight: bold;
-  font-size: 14px;
-  padding: 0 15px;
-}
-body main .section3 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 60px;
-  margin: 0 10px;
+body .background-card {
+  background-color: #f6f6f6;
   margin-top: 10px;
   padding-bottom: 50px;
+}
+body .image1-background {
   background-image: url("/images/la-palette-du-gout.jpg");
   height: 200px;
   width: 100%;
   background-size: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+}
+body .image2-background {
   background-image: url("/images/la-note-enchantee.jpg");
   height: 200px;
   width: 100%;
   background-size: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+}
+body .image3-background {
   background-image: url("/images/a-la-francaise.jpg");
   height: 200px;
   width: 100%;
   background-size: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+}
+body .image4-background {
   background-image: url("/images/le-delice-des-sens.jpg");
   height: 200px;
   width: 100%;
   background-size: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+}
+body .card-restaurant {
   background-color: white;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -148,13 +90,39 @@ body main .section3 {
   margin: 10px 0px;
   width: 100%;
   max-width: 300px;
+}
+body #div-button-explorer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 6px;
+}
+body #div-button-explorer p {
+  margin: 0px 12px 25px 12px;
+}
+body .div-fonctionnement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 7px -1px #0000002e;
+  width: 15em;
+  height: 4em;
+}
+body .div-fonctionnement:hover {
+  background-color: #f5edff;
+  cursor: pointer;
+}
+body .div-restaurants {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0 15px;
   width: calc(100% - 30px);
+}
+body .new {
   height: 30px;
   width: 90px;
+  background-color: #99e2d0;
   color: #008766;
   text-align: center;
   padding-top: 10px;
@@ -162,12 +130,155 @@ body main .section3 {
   margin: 11px;
   float: right;
 }
-body main .section3 h3 {
+body .round-icon {
+  height: 25px;
+  width: 25px;
+  background-color: #9356dc;
+  border-radius: 100%;
+  color: white;
+  text-align: center;
+  margin: 0px 11px 0px -25px;
+  justify-content: center;
+  align-items: center;
+}
+body .round-icon2 {
+  height: 25px;
+  width: 25px;
+  background-color: #9356dc;
+  border-radius: 100%;
+  color: white;
+  text-align: center;
+  margin: 0px 20px 0px -36px;
+  justify-content: center;
+  align-items: center;
+}
+body .round-icon3 {
+  height: 25px;
+  width: 25px;
+  background-color: #9356dc;
+  border-radius: 100%;
+  color: white;
+  text-align: center;
+  margin: 0px 17px 0px -31px;
+  justify-content: center;
+  align-items: center;
+}
+body .images-restaurants {
+  width: auto;
+  height: 200px;
+  object-fit: cover;
+}
+body .background-fonctionnement {
+  background-color: #f6f6f6;
+  border-radius: 17px;
+  margin: 10px 0px;
+}
+body #section2-fonctionnement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+}
+body #section2-fonctionnement p {
+  font-weight: bold;
+  font-size: 14px;
+  padding: 0 15px;
+}
+body #icone-menu {
+  font-size: 25px;
+}
+body .button-explore {
+  width: 200px;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  background: linear-gradient(#ff79da, #9356dc);
+  text-decoration: none;
+  border-radius: 25px;
+  margin-bottom: 3em;
+  box-shadow: 0px 0px 7px 0px #0000002e;
+  cursor: pointer;
+}
+body .button-explore:hover {
+  background: linear-gradient(#9356dc, #ff79da);
+  box-shadow: 0px 0px 7px 0px #0000002e;
+}
+body .button-explore .button-explore-color {
+  color: white;
+  text-decoration: none;
+}
+body .flex-section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .flex-section3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  margin: 0 10px;
+}
+body .div-texte h3 {
   font-size: 1em;
   margin: 0;
 }
-body main .section3 p {
+body .div-texte p {
   margin: 0;
+}
+body .icone-heart {
+  height: 85px;
+  width: 85px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+body .fas.fa-map-marker-alt::before {
+  line-height: 3;
+  padding-right: 15px;
+}
+body .fas.fa-utensils::before {
+  margin-left: 4px;
+  margin-right: 12px;
+}
+body .fas.fa-hands-helping::before {
+  margin-right: 10px;
+}
+body .fas.fa-heart::before {
+  font-size: 25px;
+}
+body .fas.fa-mobile-alt::before {
+  color: #7e7e7e;
+  margin: 0px 7px 10px 7px;
+  font-size: 20px;
+}
+body .fas.fa-list-ul::before {
+  color: #7e7e7e;
+  margin: 50px 4px 10px -3px;
+  font-size: 20px;
+}
+body .fas.fa-store::before {
+  color: #7e7e7e;
+  margin: 50px 2px 10px -2px;
+  font-size: 20px;
+}
+
+footer {
+  background-color: #353535;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 7%;
+}
+footer p {
+  margin: 5px;
+}
+footer h4 {
+  font-style: normal;
+  font-weight: 100;
+  font-size: 1.17em;
+  margin: 0;
+  margin: 0px 7px 15px 7px;
 }
 
 * {
