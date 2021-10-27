@@ -395,6 +395,13 @@ body .image1-background {
   background-size: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  object-fit: cover;
+}
+body .image1-background:hover {
+  transition: 1s;
+  transform: scale(1.04);
+  cursor: pointer;
+  box-shadow: 0px 0px 7px 0px #0000002e;
 }
 body .image2-background {
   background-image: url("./images/la-note-enchantee.jpg");
@@ -404,6 +411,12 @@ body .image2-background {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
+body .image2-background:hover {
+  transition: 1s;
+  transform: scale(1.04);
+  cursor: pointer;
+  box-shadow: 0px 0px 7px 0px #0000002e;
+}
 body .image3-background {
   background-image: url("./images/a-la-francaise.jpg");
   height: 200px;
@@ -412,6 +425,12 @@ body .image3-background {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
+body .image3-background:hover {
+  transition: 1s;
+  transform: scale(1.04);
+  cursor: pointer;
+  box-shadow: 0px 0px 7px 0px #0000002e;
+}
 body .image4-background {
   background-image: url("./images/le-delice-des-sens.jpg");
   height: 200px;
@@ -419,6 +438,12 @@ body .image4-background {
   background-size: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+}
+body .image4-background:hover {
+  transition: 1s;
+  transform: scale(1.04);
+  cursor: pointer;
+  box-shadow: 0px 0px 7px 0px #0000002e;
 }
 body .card-restaurant {
   background-color: white;
@@ -429,6 +454,7 @@ body .card-restaurant {
   margin: 10px 0px;
   width: 100%;
   max-width: 300px;
+  overflow: hidden;
 }
 body #div-button-explorer {
   display: flex;
@@ -449,6 +475,11 @@ body .div-fonctionnement {
 }
 body .div-fonctionnement:hover {
   background-color: #f5edff;
+  cursor: pointer;
+}
+body .div-fonctionnement:hover:hover {
+  box-shadow: 0px 0px 7px 0px #0000002e;
+  transform: scale(1.04);
   cursor: pointer;
 }
 body .div-restaurants {
@@ -533,8 +564,10 @@ body .button-explore {
 body .button-explore:hover {
   background: linear-gradient(#9356dc, #ff79da);
   box-shadow: 0px 0px 7px 0px #0000002e;
+  transform: scale(1.04);
+  cursor: pointer;
 }
-body .button-explore .button-explore-color {
+body .button-explore-color {
   color: white;
   text-decoration: none;
 }
@@ -563,6 +596,7 @@ body .icone-heart {
   display: flex;
   justify-content: right;
   align-items: center;
+  font-size: 30px;
 }
 body .fas.fa-map-marker-alt::before {
   line-height: 3;
