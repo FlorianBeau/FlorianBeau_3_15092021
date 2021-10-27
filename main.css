@@ -389,7 +389,7 @@ body .background-card {
   padding-bottom: 50px;
 }
 body .image1-background {
-  background-image: url("/images/la-palette-du-gout.jpg");
+  background-image: url("./images/la-palette-du-gout.jpg");
   height: 200px;
   width: 100%;
   background-size: cover;
@@ -397,7 +397,7 @@ body .image1-background {
   border-top-right-radius: 15px;
 }
 body .image2-background {
-  background-image: url("/images/la-note-enchantee.jpg");
+  background-image: url("./images/la-note-enchantee.jpg");
   height: 200px;
   width: 100%;
   background-size: cover;
@@ -405,7 +405,7 @@ body .image2-background {
   border-top-right-radius: 15px;
 }
 body .image3-background {
-  background-image: url("/images/a-la-francaise.jpg");
+  background-image: url("./images/a-la-francaise.jpg");
   height: 200px;
   width: 100%;
   background-size: cover;
@@ -413,7 +413,7 @@ body .image3-background {
   border-top-right-radius: 15px;
 }
 body .image4-background {
-  background-image: url("/images/le-delice-des-sens.jpg");
+  background-image: url("./images/le-delice-des-sens.jpg");
   height: 200px;
   width: 100%;
   background-size: cover;
