@@ -370,7 +370,8 @@ footer h4 {
 }
 
 body {
-  margin: 0;
+  margin: auto;
+  min-width: 300px;
   /*
   // Section 2 //
 
@@ -403,11 +404,11 @@ body #div-button-explorer p {
   margin: 0px 12px 25px 12px;
 }
 body #div-h2 {
-  max-width: 925px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0 auto;
+  max-width: 1200px;
 }
 body #div-h2 h2 {
   margin: 10px 10px;
@@ -418,7 +419,8 @@ body #container-fonctionnement {
   flex-wrap: wrap;
   padding-bottom: 40px;
   margin: 0 auto;
-  justify-content: center;
+  justify-content: space-evenly;
+  max-width: 1200px;
 }
 body #container-fonctionnement p {
   font-weight: bold;
@@ -617,8 +619,8 @@ body .background-fonctionnement {
   flex-wrap: wrap;
   align-items: center;
   padding: 0 15px;
-  max-width: 899px;
   margin: 0 auto;
+  max-width: 1200px;
 }
 #container-restaurant .new {
   height: 30px;
@@ -666,14 +668,12 @@ footer {
   background-color: #353535;
   color: #ffffff;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
   padding: 7%;
 }
 footer div {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
 }
 footer p {
   margin: 5px;
