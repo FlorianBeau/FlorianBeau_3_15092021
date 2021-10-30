@@ -399,10 +399,195 @@ body {
     box-shadow: -1px -1px 3px 1px #0000002e;
   }
 
-  .background-card {
+  // Bouton header //
+  #div-button-explorer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 6px;
+
+    p {
+      margin: 0px 12px 25px 12px;
+    }
+  }
+
+  ////////////////////////////////////////////////////////////
+
+  /*
+  // Section 2 //
+
+    div:nth-child(2) {
+      
+
+    div:nth-child(2) {
+     
+  }
+
+  */
+
+  //////////////////////////////// SECTION 2 OK /////////////////////////////
+
+  #div-h2 {
+    max-width: 925px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+    h2 {
+      margin: 10px 10px;
+    }
+  }
+
+  #container-fonctionnement {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    justify-content: center;
+    p {
+      font-weight: bold;
+      font-size: 14px;
+      padding: 0 15px;
+    }
+  }
+
+  .div-fonctionnement {
+    display: flex;
+    box-shadow: 0px 4px 7px -1px #0000002e;
+    width: 17em;
+    height: 4em;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background-color: #f5edff;
+      cursor: pointer;
+    }
+    &:hover {
+      box-shadow: 0px 0px 7px 0px #0000002e;
+      transform: scale(1.04);
+      cursor: pointer;
+    }
+  }
+
+  .background-fonctionnement {
     background-color: #f6f6f6;
-    margin-top: 10px;
-    padding-bottom: 50px;
+    border-radius: 17px;
+    margin: 10px 20px;
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////////
+
+// Section 2 ronds //
+.round-icon {
+  height: 25px;
+  width: 25px;
+  background-color: #9356dc;
+  border-radius: 100%;
+  color: white;
+  text-align: center;
+  margin: 0px 11px 0px -50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.round-icon2 {
+  height: 25px;
+  width: 25px;
+  background-color: #9356dc;
+  border-radius: 100%;
+  color: white;
+  text-align: center;
+  margin: 0px 20px 0px -60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.round-icon3 {
+  height: 25px;
+  width: 25px;
+  background-color: #9356dc;
+  border-radius: 100%;
+  color: white;
+  text-align: center;
+  margin: 0px 17px 0px -55px;
+  justify-content: center;
+  align-items: center;
+}
+
+// Section 1 boutons //
+.button-explore {
+  width: 200px;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  background: linear-gradient(#ff79da, #9356dc);
+  text-decoration: none;
+  border-radius: 25px;
+  margin-bottom: 3em;
+  box-shadow: 0px 0px 7px 0px #0000002e;
+  cursor: pointer;
+
+  &:hover {
+    background: linear-gradient(#9356dc, #ff79da);
+    box-shadow: 0px 0px 7px 0px #0000002e;
+    transform: scale(1.04);
+    cursor: pointer;
+  }
+}
+
+.button-explore-color {
+  color: white;
+  text-decoration: none;
+}
+
+// Flexbox Section 1 //
+.flex-section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/// SECTION 3 //////////////////////////////////////////////
+
+// Flexbox Section 3 //
+
+#container-restaurant {
+  background-color: #f6f6f6;
+  margin-top: 10px;
+  padding-bottom: 50px;
+
+  .flex-section3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    margin: 0 10px;
+  }
+
+  .div-texte {
+    h3 {
+      font-size: 1em;
+      margin: 0;
+    }
+    p {
+      margin: 0;
+    }
+  }
+
+  // Icone coeur Section 3 //
+  .icone-heart {
+    height: 85px;
+    width: 85px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 30px;
   }
 
   // Images section 3 //
@@ -478,31 +663,21 @@ body {
     border-bottom-right-radius: 20px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    margin: 10px 0px;
+    margin: 20px auto;
     width: 100%;
-    max-width: 300px;
+    max-width: 440px;
     overflow: hidden;
-  }
-
-  // Bouton header //
-  #div-button-explorer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 6px;
-
-    p {
-      margin: 0px 12px 25px 12px;
-    }
   }
 
   // Div section 3 restaurants //
   .div-restaurants {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     padding: 0 15px;
-    width: calc(100% - 30px);
+    max-width: 899px;
+    margin: 0 auto;
   }
 
   // Section 3 nouveau //
@@ -517,216 +692,9 @@ body {
     margin: 11px;
     float: right;
   }
-
-  ////////////////////////////////////////////////////////////
-
-  //////////////////////////////////////////////////////////////
-
-  /*
-  // Section 2 //
-  #container-fonctionnement {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    div:nth-child(2) {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 0px 4px 7px -1px #0000002e;
-      width: 15em;
-      height: 4em;
-      background-color: #f6f6f6;
-      border-radius: 17px;
-      margin: 10px 0px;
-    }
-
-    div:nth-child(2) {
-      display: flex;
-      height: 25px;
-      width: 25px;
-      background-color: #9356dc;
-      border-radius: 100%;
-      color: white;
-      text-align: center;
-      margin: 0px 11px 0px -25px;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-
-  */
-
-  //////////////////////////////// SECTION 2 OK /////////////////////////////
-
-  #div-h2 {
-    max-width: 925px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 0 auto;
-
-    h2 {
-      margin: 10px 10px;
-    }
-  }
-
-  #container-fonctionnement {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-bottom: 40px;
-    margin: 0 auto;
-    justify-content: center;
-    p {
-      font-weight: bold;
-      font-size: 14px;
-      padding: 0 15px;
-    }
-  }
-
-  .div-fonctionnement {
-    display: flex;
-    box-shadow: 0px 4px 7px -1px #0000002e;
-    width: 17em;
-    height: 4em;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
-    &:hover {
-      background-color: #f5edff;
-      cursor: pointer;
-    }
-    &:hover {
-      box-shadow: 0px 0px 7px 0px #0000002e;
-      transform: scale(1.04);
-      cursor: pointer;
-    }
-  }
-
-  .background-fonctionnement {
-    background-color: #f6f6f6;
-    border-radius: 17px;
-    margin: 10px 20px;
-  }
 }
 
-/////////////////////////////////////////////////////////////////////////////
-
-/*
-      
-    }
-
-    .background-fonctionnement {
-      box-shadow: 0px 4px 7px -1px #0000002e;
-      border-radius: 20px 20px;
-      width: 16em;
-      height: 4em;
-      }
-  */
-
-// Section 2 ronds //
-.round-icon {
-  height: 25px;
-  width: 25px;
-  background-color: #9356dc;
-  border-radius: 100%;
-  color: white;
-  text-align: center;
-  margin: 0px 11px 0px -50px;
-  justify-content: center;
-  align-items: center;
-}
-
-.round-icon2 {
-  height: 25px;
-  width: 25px;
-  background-color: #9356dc;
-  border-radius: 100%;
-  color: white;
-  text-align: center;
-  margin: 0px 20px 0px -60px;
-  justify-content: center;
-  align-items: center;
-}
-
-.round-icon3 {
-  height: 25px;
-  width: 25px;
-  background-color: #9356dc;
-  border-radius: 100%;
-  color: white;
-  text-align: center;
-  margin: 0px 17px 0px -55px;
-  justify-content: center;
-  align-items: center;
-}
-
-// Section 1 boutons //
-.button-explore {
-  width: 200px;
-  line-height: 50px;
-  text-align: center;
-  vertical-align: middle;
-  background: linear-gradient(#ff79da, #9356dc);
-  text-decoration: none;
-  border-radius: 25px;
-  margin-bottom: 3em;
-  box-shadow: 0px 0px 7px 0px #0000002e;
-  cursor: pointer;
-
-  &:hover {
-    background: linear-gradient(#9356dc, #ff79da);
-    box-shadow: 0px 0px 7px 0px #0000002e;
-    transform: scale(1.04);
-    cursor: pointer;
-  }
-}
-
-.button-explore-color {
-  color: white;
-  text-decoration: none;
-}
-
-// Flexbox Section 1 //
-.flex-section1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-// Flexbox Section 3 //
-.flex-section3 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 60px;
-  margin: 0 10px;
-}
-
-// Section 3 //
-.div-texte {
-  h3 {
-    font-size: 1em;
-    margin: 0;
-  }
-  p {
-    margin: 0;
-  }
-}
-
-// Icone coeur Section 3 //
-.icone-heart {
-  height: 85px;
-  width: 85px;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  font-size: 30px;
-}
+////////////////////////////////////////////////////////////////
 
 // Icones //
 .fas {
@@ -774,6 +742,13 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 7%;
+
+  div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
   p {
     margin: 5px;

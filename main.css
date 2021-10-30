@@ -373,36 +373,12 @@ body {
   margin: 0;
   /*
   // Section 2 //
-  #container-fonctionnement {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: wrap;
 
     div:nth-child(2) {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 0px 4px 7px -1px #0000002e;
-      width: 15em;
-      height: 4em;
-      background-color: #f6f6f6;
-      border-radius: 17px;
-      margin: 10px 0px;
-    }
+
 
     div:nth-child(2) {
-      display: flex;
-      height: 25px;
-      width: 25px;
-      background-color: #9356dc;
-      border-radius: 100%;
-      color: white;
-      text-align: center;
-      margin: 0px 11px 0px -25px;
-      justify-content: center;
-      align-items: center;
-    }
+
   }
 
   */
@@ -417,79 +393,6 @@ body .background-dark-gray {
   background-color: #eaeaea;
   box-shadow: -1px -1px 3px 1px #0000002e;
 }
-body .background-card {
-  background-color: #f6f6f6;
-  margin-top: 10px;
-  padding-bottom: 50px;
-}
-body .image1-background {
-  background-image: url("./images/la-palette-du-gout.jpg");
-  height: 200px;
-  width: 100%;
-  background-size: cover;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  object-fit: cover;
-}
-body .image1-background:hover {
-  transition: 1s;
-  transform: scale(1.04);
-  cursor: pointer;
-  box-shadow: 0px 0px 7px 0px #0000002e;
-}
-body .image2-background {
-  background-image: url("./images/la-note-enchantee.jpg");
-  height: 200px;
-  width: 100%;
-  background-size: cover;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-body .image2-background:hover {
-  transition: 1s;
-  transform: scale(1.04);
-  cursor: pointer;
-  box-shadow: 0px 0px 7px 0px #0000002e;
-}
-body .image3-background {
-  background-image: url("./images/a-la-francaise.jpg");
-  height: 200px;
-  width: 100%;
-  background-size: cover;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-body .image3-background:hover {
-  transition: 1s;
-  transform: scale(1.04);
-  cursor: pointer;
-  box-shadow: 0px 0px 7px 0px #0000002e;
-}
-body .image4-background {
-  background-image: url("./images/le-delice-des-sens.jpg");
-  height: 200px;
-  width: 100%;
-  background-size: cover;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-body .image4-background:hover {
-  transition: 1s;
-  transform: scale(1.04);
-  cursor: pointer;
-  box-shadow: 0px 0px 7px 0px #0000002e;
-}
-body .card-restaurant {
-  background-color: white;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  margin: 10px 0px;
-  width: 100%;
-  max-width: 300px;
-  overflow: hidden;
-}
 body #div-button-explorer {
   display: flex;
   flex-direction: column;
@@ -498,24 +401,6 @@ body #div-button-explorer {
 }
 body #div-button-explorer p {
   margin: 0px 12px 25px 12px;
-}
-body .div-restaurants {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 15px;
-  width: calc(100% - 30px);
-}
-body .new {
-  height: 30px;
-  width: 90px;
-  background-color: #99e2d0;
-  color: #008766;
-  text-align: center;
-  padding-top: 10px;
-  border-radius: 4px;
-  margin: 11px;
-  float: right;
 }
 body #div-h2 {
   max-width: 925px;
@@ -565,17 +450,6 @@ body .background-fonctionnement {
   margin: 10px 20px;
 }
 
-/*
-
-    }
-
-    .background-fonctionnement {
-      box-shadow: 0px 4px 7px -1px #0000002e;
-      border-radius: 20px 20px;
-      width: 16em;
-      height: 4em;
-      }
-  */
 .round-icon {
   height: 25px;
   width: 25px;
@@ -642,29 +516,120 @@ body .background-fonctionnement {
   align-items: center;
 }
 
-.flex-section3 {
+#container-restaurant {
+  background-color: #f6f6f6;
+  margin-top: 10px;
+  padding-bottom: 50px;
+}
+#container-restaurant .flex-section3 {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 60px;
   margin: 0 10px;
 }
-
-.div-texte h3 {
+#container-restaurant .div-texte h3 {
   font-size: 1em;
   margin: 0;
 }
-.div-texte p {
+#container-restaurant .div-texte p {
   margin: 0;
 }
-
-.icone-heart {
+#container-restaurant .icone-heart {
   height: 85px;
   width: 85px;
   display: flex;
   justify-content: right;
   align-items: center;
   font-size: 30px;
+}
+#container-restaurant .image1-background {
+  background-image: url("./images/la-palette-du-gout.jpg");
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+}
+#container-restaurant .image1-background:hover {
+  transition: 1s;
+  transform: scale(1.04);
+  cursor: pointer;
+  box-shadow: 0px 0px 7px 0px #0000002e;
+}
+#container-restaurant .image2-background {
+  background-image: url("./images/la-note-enchantee.jpg");
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+#container-restaurant .image2-background:hover {
+  transition: 1s;
+  transform: scale(1.04);
+  cursor: pointer;
+  box-shadow: 0px 0px 7px 0px #0000002e;
+}
+#container-restaurant .image3-background {
+  background-image: url("./images/a-la-francaise.jpg");
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+#container-restaurant .image3-background:hover {
+  transition: 1s;
+  transform: scale(1.04);
+  cursor: pointer;
+  box-shadow: 0px 0px 7px 0px #0000002e;
+}
+#container-restaurant .image4-background {
+  background-image: url("./images/le-delice-des-sens.jpg");
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+#container-restaurant .image4-background:hover {
+  transition: 1s;
+  transform: scale(1.04);
+  cursor: pointer;
+  box-shadow: 0px 0px 7px 0px #0000002e;
+}
+#container-restaurant .card-restaurant {
+  background-color: white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 440px;
+  overflow: hidden;
+}
+#container-restaurant .div-restaurants {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 15px;
+  max-width: 899px;
+  margin: 0 auto;
+}
+#container-restaurant .new {
+  height: 30px;
+  width: 90px;
+  background-color: #99e2d0;
+  color: #008766;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 4px;
+  margin: 11px;
+  float: right;
 }
 
 .fas.fa-map-marker-alt::before {
@@ -703,6 +668,12 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 7%;
+}
+footer div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 footer p {
   margin: 5px;
