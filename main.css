@@ -337,30 +337,6 @@ template {
   display: none;
 }
 
-h1 {
-  font-size: 1.5em;
-}
-
-h2 {
-  padding-top: 20px;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.flex {
-  display: flex;
-}
-
-p {
-  font-size: 14px;
-}
-
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -372,318 +348,92 @@ footer h4 {
 body {
   margin: auto;
   min-width: 300px;
-  /*
-  // Section 2 //
-
-    div:nth-child(2) {
-
-
-    div:nth-child(2) {
-
-  }
-
-  */
 }
-body header .logo {
+body header div {
+  text-align: center;
+}
+body header img {
   margin: 20px 0px;
 }
-body .background-light-gray {
-  background-color: #f6f6f6;
-}
-body .background-dark-gray {
-  background-color: #eaeaea;
-  box-shadow: -1px -1px 3px 1px #0000002e;
-}
-body #div-button-explorer {
+body main #reservez div {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+}
+body main #reservez > div:first-child {
+  background-color: #eaeaea;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -1px -1px 3px 1px #0000002e;
   padding: 0 6px;
 }
-body #div-button-explorer p {
-  margin: 0px 12px 25px 12px;
-}
-body #div-h2 {
+body main #reservez > div:nth-child(2) {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  max-width: 1200px;
-}
-body #div-h2 h2 {
-  margin: 10px 10px;
-}
-body #container-fonctionnement {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding-bottom: 40px;
-  margin: 0 auto;
-  justify-content: space-evenly;
-  max-width: 1200px;
-}
-body #container-fonctionnement p {
-  font-weight: bold;
-  font-size: 14px;
-  padding: 0 15px;
-}
-body .div-fonctionnement {
-  display: flex;
-  box-shadow: 0px 4px 7px -1px #0000002e;
-  width: 17em;
-  height: 4em;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-body .div-fonctionnement:hover {
-  background-color: #f5edff;
-  cursor: pointer;
-}
-body .div-fonctionnement:hover {
-  box-shadow: 0px 0px 7px 0px #0000002e;
-  transform: scale(1.04);
-  cursor: pointer;
-}
-body .background-fonctionnement {
+  text-align: center;
   background-color: #f6f6f6;
-  border-radius: 17px;
-  margin: 10px 20px;
+  padding: 0 6px;
 }
-
-.round-icon {
-  height: 25px;
-  width: 25px;
-  background-color: #9356dc;
-  border-radius: 100%;
-  color: white;
-  text-align: center;
-  margin: 0px 11px 0px -50px;
-  justify-content: center;
-  align-items: center;
+body main #reservez > div:nth-child(2) > p {
+  margin: 0px 12px 25px 12px;
 }
-
-.round-icon2 {
-  height: 25px;
-  width: 25px;
-  background-color: #9356dc;
-  border-radius: 100%;
-  color: white;
-  text-align: center;
-  margin: 0px 20px 0px -60px;
-  justify-content: center;
-  align-items: center;
-}
-
-.round-icon3 {
-  height: 25px;
-  width: 25px;
-  background-color: #9356dc;
-  border-radius: 100%;
-  color: white;
-  text-align: center;
-  margin: 0px 17px 0px -55px;
-  justify-content: center;
-  align-items: center;
-}
-
-.button-explore {
+body main #reservez > div:nth-child(2) > div:nth-child(3) {
   width: 200px;
   line-height: 50px;
-  text-align: center;
-  vertical-align: middle;
   background: linear-gradient(#ff79da, #9356dc);
-  text-decoration: none;
   border-radius: 25px;
   margin-bottom: 3em;
   box-shadow: 0px 0px 7px 0px #0000002e;
   cursor: pointer;
 }
-.button-explore:hover {
+body main #reservez > div:nth-child(2) > div:nth-child(3) > a {
+  text-decoration: none;
+  color: white;
+}
+body main #reservez > div:nth-child(2) > div:nth-child(3):hover {
   background: linear-gradient(#9356dc, #ff79da);
   box-shadow: 0px 0px 7px 0px #0000002e;
   transform: scale(1.04);
   cursor: pointer;
 }
-
-.button-explore-color {
-  color: white;
-  text-decoration: none;
-}
-
-.flex-section1 {
+body main #fonctionnement > div:nth-child(1) {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#container-restaurant {
-  background-color: #f6f6f6;
-  margin-top: 10px;
-  padding-bottom: 50px;
-}
-#container-restaurant .flex-section3 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 60px;
-  margin: 0 10px;
-}
-#container-restaurant .div-texte h3 {
-  font-size: 1em;
-  margin: 0;
-}
-#container-restaurant .div-texte p {
-  margin: 0;
-}
-#container-restaurant .icone-heart {
-  height: 85px;
-  width: 85px;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  font-size: 30px;
-}
-#container-restaurant .image1-background {
-  background-image: url("./images/la-palette-du-gout.jpg");
-  height: 200px;
-  width: 100%;
-  background-size: cover;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  object-fit: cover;
-}
-#container-restaurant .image1-background:hover {
-  transition: 1s;
-  transform: scale(1.04);
-  cursor: pointer;
-  box-shadow: 0px 0px 7px 0px #0000002e;
-}
-#container-restaurant .image2-background {
-  background-image: url("./images/la-note-enchantee.jpg");
-  height: 200px;
-  width: 100%;
-  background-size: cover;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-#container-restaurant .image2-background:hover {
-  transition: 1s;
-  transform: scale(1.04);
-  cursor: pointer;
-  box-shadow: 0px 0px 7px 0px #0000002e;
-}
-#container-restaurant .image3-background {
-  background-image: url("./images/a-la-francaise.jpg");
-  height: 200px;
-  width: 100%;
-  background-size: cover;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-#container-restaurant .image3-background:hover {
-  transition: 1s;
-  transform: scale(1.04);
-  cursor: pointer;
-  box-shadow: 0px 0px 7px 0px #0000002e;
-}
-#container-restaurant .image4-background {
-  background-image: url("./images/le-delice-des-sens.jpg");
-  height: 200px;
-  width: 100%;
-  background-size: cover;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-#container-restaurant .image4-background:hover {
-  transition: 1s;
-  transform: scale(1.04);
-  cursor: pointer;
-  box-shadow: 0px 0px 7px 0px #0000002e;
-}
-#container-restaurant .card-restaurant {
-  background-color: white;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  margin: 20px auto;
-  width: 100%;
-  max-width: 440px;
-  overflow: hidden;
-}
-#container-restaurant .div-restaurants {
-  display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
-  padding: 0 15px;
   margin: 0 auto;
   max-width: 1200px;
 }
-#container-restaurant .new {
-  height: 30px;
-  width: 90px;
-  background-color: #99e2d0;
-  color: #008766;
-  text-align: center;
-  padding-top: 10px;
-  border-radius: 4px;
-  margin: 11px;
-  float: right;
-}
-
-.fas.fa-map-marker-alt::before {
+body main .fas.fa-map-marker-alt::before {
   line-height: 3;
   padding-right: 15px;
 }
-.fas.fa-utensils::before {
+body main .fas.fa-utensils::before {
   margin-left: 4px;
   margin-right: 12px;
 }
-.fas.fa-hands-helping::before {
+body main .fas.fa-hands-helping::before {
   margin-right: 10px;
 }
-.fas.fa-heart::before {
+body main .fas.fa-heart::before {
   font-size: 25px;
 }
-.fas.fa-mobile-alt::before {
+body main .fas.fa-mobile-alt::before {
   color: #7e7e7e;
   margin: 0px 7px 10px 7px;
   font-size: 20px;
 }
-.fas.fa-list-ul::before {
+body main .fas.fa-list-ul::before {
   color: #7e7e7e;
   margin: 50px 4px 10px -3px;
   font-size: 20px;
 }
-.fas.fa-store::before {
+body main .fas.fa-store::before {
   color: #7e7e7e;
   margin: 50px 2px 10px -2px;
   font-size: 20px;
-}
-
-footer {
-  background-color: #353535;
-  color: #ffffff;
-  display: flex;
-  justify-content: flex-start;
-  padding: 7%;
-}
-footer div {
-  display: flex;
-  flex-direction: column;
-}
-footer p {
-  margin: 5px;
-}
-footer h4 {
-  font-style: normal;
-  font-weight: 100;
-  font-size: 1.17em;
-  margin: 0;
-  margin: 0px 7px 15px 7px;
 }
 
 * {
