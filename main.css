@@ -83,8 +83,13 @@ body main #fonctionnement h2 {
 }
 body main #fonctionnement > div:nth-child(2) {
   display: flex;
-  align-items: stretch;
+  flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
+}
+body main #fonctionnement #container-fonctionnement {
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 body main #fonctionnement #container-fonctionnement .div-fonctionnement {
@@ -148,8 +153,7 @@ body main #fonctionnement .div-fonctionnement .round-icon3 {
 body main #restaurants {
   background-color: #f6f6f6;
   margin-top: 10px;
-  padding-bottom: 50px;
-  margin: 30px 10px;
+  margin: 30px 0px 0px 0px;
 }
 body main #restaurants > div:nth-child(1) {
   display: flex;
@@ -197,9 +201,9 @@ body main #restaurants > div:nth-child(2) .icone-heart {
   height: 85px;
   width: 85px;
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   align-items: center;
-  font-size: 30px;
+  font-size: 25px;
 }
 body main #restaurants > div:nth-child(2) .image1-background {
   background-image: url("./images/la-palette-du-gout.jpg");
@@ -271,10 +275,12 @@ body main #restaurants > div:nth-child(2) .new {
 }
 body main #restaurants > div:nth-child(2) .flex-section3 {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
+  align-content: space-between;
   height: 60px;
-  margin: 0 10px;
+  margin: 0 14px;
 }
 body main .fas.fa-map-marker-alt::before {
   line-height: 3;
@@ -291,18 +297,53 @@ body main .fas.fa-heart::before {
 }
 body main .fas.fa-mobile-alt::before {
   color: #7e7e7e;
-  margin: 0px 7px 10px 7px;
+  margin: 0px 14px 10px 7px;
   font-size: 20px;
 }
 body main .fas.fa-list-ul::before {
   color: #7e7e7e;
-  margin: 50px 4px 10px -3px;
+  margin: 50px 11px 10px -3px;
   font-size: 20px;
 }
 body main .fas.fa-store::before {
   color: #7e7e7e;
-  margin: 50px 2px 10px -2px;
+  margin: 50px 9px 10px -2px;
   font-size: 20px;
+}
+
+footer {
+  background-color: #353535;
+}
+footer > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+  padding: 7%;
+}
+footer > div:nth-child(2) {
+  display: flex;
+  justify-content: flex-start;
+  color: #ffffff;
+  margin: 0 auto;
+}
+footer p {
+  margin: 11px 0px;
+}
+footer h4 {
+  font-style: normal;
+  font-size: 1.17em;
+  margin: 0;
+  margin: 0px 7px 15px 0px;
+  font-weight: normal;
+}
+footer .fa-utensils::before {
+  margin-left: 4px;
+  margin-right: 12px;
+}
+footer .fa-hands-helping::before {
+  margin-right: 10px;
 }
 
 * {

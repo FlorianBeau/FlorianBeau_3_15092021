@@ -100,33 +100,39 @@ body {
       //Container-fonctionnement//
       > div:nth-child(2) {
         display: flex;
-        align-items: stretch;
+        flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
       }
 
       //Div-fonctionnement//
-      #container-fonctionnement .div-fonctionnement {
+      #container-fonctionnement {
         display: flex;
-        box-shadow: 0px 4px 7px -1px #0000002e;
-        width: 17em;
-        height: 4em;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        background-color: #f6f6f6;
-        border-radius: 17px;
-        margin: 10px 20px;
 
-        &:hover {
-          background-color: #f5edff;
-          cursor: pointer;
-        }
-        &:hover {
-          box-shadow: 0px 0px 7px 0px #0000002e;
-          transform: scale(1.04);
-          cursor: pointer;
+        .div-fonctionnement {
+          display: flex;
+          box-shadow: 0px 4px 7px -1px #0000002e;
+          width: 17em;
+          height: 4em;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          background-color: #f6f6f6;
+          border-radius: 17px;
+          margin: 10px 20px;
+
+          &:hover {
+            background-color: #f5edff;
+            cursor: pointer;
+          }
+          &:hover {
+            box-shadow: 0px 0px 7px 0px #0000002e;
+            transform: scale(1.04);
+            cursor: pointer;
+          }
         }
       }
       .div-fonctionnement {
@@ -176,8 +182,7 @@ body {
     #restaurants {
       background-color: #f6f6f6;
       margin-top: 10px;
-      padding-bottom: 50px;
-      margin: 30px 10px;
+      margin: 30px 0px 0px 0px;
 
       > div:nth-child(1) {
         display: flex;
@@ -233,9 +238,9 @@ body {
           height: 85px;
           width: 85px;
           display: flex;
-          justify-content: right;
+          justify-content: flex-end;
           align-items: center;
-          font-size: 30px;
+          font-size: 25px;
         }
 
         // Images section 3 //
@@ -318,10 +323,12 @@ body {
 
         .flex-section3 {
           display: flex;
-          justify-content: space-around;
+          justify-content: space-between;
+          flex-direction: row;
           align-items: center;
+          align-content: space-between;
           height: 60px;
-          margin: 0 10px;
+          margin: 0 14px;
         }
       }
     }
@@ -347,21 +354,62 @@ body {
 
       &.fa-mobile-alt::before {
         color: #7e7e7e;
-        margin: 0px 7px 10px 7px;
+        margin: 0px 14px 10px 7px;
         font-size: 20px;
       }
 
       &.fa-list-ul::before {
         color: #7e7e7e;
-        margin: 50px 4px 10px -3px;
+        margin: 50px 11px 10px -3px;
         font-size: 20px;
       }
 
       &.fa-store::before {
         color: #7e7e7e;
-        margin: 50px 2px 10px -2px;
+        margin: 50px 9px 10px -2px;
         font-size: 20px;
       }
     }
+  }
+}
+// FOOTER--------------------------------------------------------------
+footer {
+  background-color: #353535;
+
+  > div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+    padding: 7%;
+  }
+
+  > div:nth-child(2) {
+    display: flex;
+    justify-content: flex-start;
+    color: #ffffff;
+    margin: 0 auto;
+  }
+
+  p {
+    margin: 11px 0px;
+  }
+
+  h4 {
+    font-style: normal;
+    font-size: 1.17em;
+    margin: 0;
+    margin: 0px 7px 15px 0px;
+    font-weight: normal;
+  }
+
+  .fa-utensils::before {
+    margin-left: 4px;
+    margin-right: 12px;
+  }
+
+  .fa-hands-helping::before {
+    margin-right: 10px;
   }
 }
