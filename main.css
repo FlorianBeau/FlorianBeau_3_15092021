@@ -92,6 +92,10 @@ body main #fonctionnement #container-fonctionnement {
   flex-direction: row;
   flex-wrap: wrap;
 }
+body main #fonctionnement #container-fonctionnement #div-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
 body main #fonctionnement #container-fonctionnement .div-fonctionnement {
   display: flex;
   box-shadow: 0px 4px 7px -1px #0000002e;
@@ -114,7 +118,7 @@ body main #fonctionnement #container-fonctionnement .div-fonctionnement:hover {
   transform: scale(1.04);
   cursor: pointer;
 }
-body main #fonctionnement .div-fonctionnement .round-icon {
+body main #fonctionnement .div-fonctionnement #round-icon {
   display: flex;
   height: 25px;
   width: 25px;
@@ -122,11 +126,11 @@ body main #fonctionnement .div-fonctionnement .round-icon {
   border-radius: 100%;
   color: white;
   text-align: center;
-  margin: 0px 11px 0px -50px;
+  margin: 0px 11px 0px -78px;
   justify-content: center;
   align-items: center;
 }
-body main #fonctionnement .div-fonctionnement .round-icon2 {
+body main #fonctionnement .div-fonctionnement #round-icon2 {
   display: flex;
   height: 25px;
   width: 25px;
@@ -134,11 +138,11 @@ body main #fonctionnement .div-fonctionnement .round-icon2 {
   border-radius: 100%;
   color: white;
   text-align: center;
-  margin: 0px 20px 0px -60px;
+  margin: 0px 20px 0px -85px;
   justify-content: center;
   align-items: center;
 }
-body main #fonctionnement .div-fonctionnement .round-icon3 {
+body main #fonctionnement .div-fonctionnement #round-icon3 {
   display: flex;
   height: 25px;
   width: 25px;
@@ -146,7 +150,7 @@ body main #fonctionnement .div-fonctionnement .round-icon3 {
   border-radius: 100%;
   color: white;
   text-align: center;
-  margin: 0px 17px 0px -55px;
+  margin: 0px 17px 0px -84px;
   justify-content: center;
   align-items: center;
 }
@@ -205,7 +209,7 @@ body main #restaurants > div:nth-child(2) .icone-heart {
   align-items: center;
   font-size: 25px;
 }
-body main #restaurants > div:nth-child(2) .image1-background {
+body main #restaurants > div:nth-child(2) #image1-background {
   background-image: url("./images/la-palette-du-gout.jpg");
   height: 200px;
   width: 100%;
@@ -214,13 +218,13 @@ body main #restaurants > div:nth-child(2) .image1-background {
   border-top-right-radius: 15px;
   object-fit: cover;
 }
-body main #restaurants > div:nth-child(2) .image1-background:hover {
+body main #restaurants > div:nth-child(2) #image1-background:hover {
   transition: 1s;
   transform: scale(1.04);
   cursor: pointer;
   box-shadow: 0px 0px 7px 0px #0000002e;
 }
-body main #restaurants > div:nth-child(2) .image2-background {
+body main #restaurants > div:nth-child(2) #image2-background {
   background-image: url("./images/la-note-enchantee.jpg");
   height: 200px;
   width: 100%;
@@ -228,13 +232,13 @@ body main #restaurants > div:nth-child(2) .image2-background {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-body main #restaurants > div:nth-child(2) .image2-background:hover {
+body main #restaurants > div:nth-child(2) #image2-background:hover {
   transition: 1s;
   transform: scale(1.04);
   cursor: pointer;
   box-shadow: 0px 0px 7px 0px #0000002e;
 }
-body main #restaurants > div:nth-child(2) .image3-background {
+body main #restaurants > div:nth-child(2) #image3-background {
   background-image: url("./images/a-la-francaise.jpg");
   height: 200px;
   width: 100%;
@@ -242,13 +246,13 @@ body main #restaurants > div:nth-child(2) .image3-background {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-body main #restaurants > div:nth-child(2) .image3-background:hover {
+body main #restaurants > div:nth-child(2) #image3-background:hover {
   transition: 1s;
   transform: scale(1.04);
   cursor: pointer;
   box-shadow: 0px 0px 7px 0px #0000002e;
 }
-body main #restaurants > div:nth-child(2) .image4-background {
+body main #restaurants > div:nth-child(2) #image4-background {
   background-image: url("./images/le-delice-des-sens.jpg");
   height: 200px;
   width: 100%;
@@ -256,7 +260,7 @@ body main #restaurants > div:nth-child(2) .image4-background {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-body main #restaurants > div:nth-child(2) .image4-background:hover {
+body main #restaurants > div:nth-child(2) #image4-background:hover {
   transition: 1s;
   transform: scale(1.04);
   cursor: pointer;
@@ -352,6 +356,358 @@ footer .fa-hands-helping::before {
 
 h1 h2 h3 h4 {
   font-family: "Shrikhand", sans-serif;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+footer h4 {
+  font-family: "Shrikhand", sans-serif;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  padding-top: 20px;
+}
+
+body {
+  margin: auto;
+  min-width: 300px;
+}
+body header div {
+  text-align: center;
+}
+body header img {
+  margin: 20px 0px;
+}
+body main #reservez div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main #reservez > div:first-child {
+  background-color: #eaeaea;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -1px -1px 3px 1px #0000002e;
+  padding: 0 6px;
+}
+body main #reservez p {
+  padding: 0 15px;
+}
+body main #reservez > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #f6f6f6;
+  padding: 0 6px;
+}
+body main #reservez > div:nth-child(2) > p {
+  margin: 0px 12px 25px 12px;
+}
+body main #reservez > div:nth-child(2) > div:nth-child(3) {
+  width: 200px;
+  line-height: 50px;
+  background: linear-gradient(#ff79da, #9356dc);
+  border-radius: 25px;
+  margin-bottom: 3em;
+  box-shadow: 0px 0px 7px 0px #0000002e;
+  cursor: pointer;
+}
+body main #reservez > div:nth-child(2) > div:nth-child(3) > a {
+  text-decoration: none;
+  color: white;
+}
+body main #reservez > div:nth-child(2) > div:nth-child(3):hover {
+  background: linear-gradient(#9356dc, #ff79da);
+  box-shadow: 0px 0px 7px 0px #0000002e;
+  transform: scale(1.04);
+  cursor: pointer;
+}
+body main #fonctionnement > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+body main #fonctionnement h2 {
+  margin: 30px 10px;
+}
+body main #fonctionnement > div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+body main #fonctionnement #container-fonctionnement {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+body main #fonctionnement #container-fonctionnement #div-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+body main #fonctionnement #container-fonctionnement .div-fonctionnement {
+  display: flex;
+  box-shadow: 0px 4px 7px -1px #0000002e;
+  width: 17em;
+  height: 4em;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+  border-radius: 17px;
+  margin: 10px 20px;
+}
+body main #fonctionnement #container-fonctionnement .div-fonctionnement:hover {
+  background-color: #f5edff;
+  cursor: pointer;
+}
+body main #fonctionnement #container-fonctionnement .div-fonctionnement:hover {
+  box-shadow: 0px 0px 7px 0px #0000002e;
+  transform: scale(1.04);
+  cursor: pointer;
+}
+body main #fonctionnement .div-fonctionnement #round-icon {
+  display: flex;
+  height: 25px;
+  width: 25px;
+  background-color: #9356dc;
+  border-radius: 100%;
+  color: white;
+  text-align: center;
+  margin: 0px 11px 0px -78px;
+  justify-content: center;
+  align-items: center;
+}
+body main #fonctionnement .div-fonctionnement #round-icon2 {
+  display: flex;
+  height: 25px;
+  width: 25px;
+  background-color: #9356dc;
+  border-radius: 100%;
+  color: white;
+  text-align: center;
+  margin: 0px 20px 0px -85px;
+  justify-content: center;
+  align-items: center;
+}
+body main #fonctionnement .div-fonctionnement #round-icon3 {
+  display: flex;
+  height: 25px;
+  width: 25px;
+  background-color: #9356dc;
+  border-radius: 100%;
+  color: white;
+  text-align: center;
+  margin: 0px 17px 0px -84px;
+  justify-content: center;
+  align-items: center;
+}
+body main #restaurants {
+  background-color: #f6f6f6;
+  margin-top: 10px;
+  margin: 30px 0px 0px 0px;
+}
+body main #restaurants > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+body main #restaurants h2 {
+  margin: 30px 10px;
+}
+body main #restaurants > div:nth-child(2) {
+  background-color: #f6f6f6;
+  margin-top: 10px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+body main #restaurants > div:nth-child(2) > div:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 15px;
+}
+body main #restaurants > div:nth-child(2) .div-texte h3 {
+  font-size: 1em;
+  margin: 0;
+}
+body main #restaurants > div:nth-child(2) .div-texte p {
+  margin: 0;
+}
+body main #restaurants > div:nth-child(2) .card-restaurant {
+  background-color: white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 440px;
+  overflow: hidden;
+}
+body main #restaurants > div:nth-child(2) .icone-heart {
+  height: 85px;
+  width: 85px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 25px;
+}
+body main #restaurants > div:nth-child(2) #image1-background {
+  background-image: url("./images/la-palette-du-gout.jpg");
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+}
+body main #restaurants > div:nth-child(2) #image1-background:hover {
+  transition: 1s;
+  transform: scale(1.04);
+  cursor: pointer;
+  box-shadow: 0px 0px 7px 0px #0000002e;
+}
+body main #restaurants > div:nth-child(2) #image2-background {
+  background-image: url("./images/la-note-enchantee.jpg");
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+body main #restaurants > div:nth-child(2) #image2-background:hover {
+  transition: 1s;
+  transform: scale(1.04);
+  cursor: pointer;
+  box-shadow: 0px 0px 7px 0px #0000002e;
+}
+body main #restaurants > div:nth-child(2) #image3-background {
+  background-image: url("./images/a-la-francaise.jpg");
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+body main #restaurants > div:nth-child(2) #image3-background:hover {
+  transition: 1s;
+  transform: scale(1.04);
+  cursor: pointer;
+  box-shadow: 0px 0px 7px 0px #0000002e;
+}
+body main #restaurants > div:nth-child(2) #image4-background {
+  background-image: url("./images/le-delice-des-sens.jpg");
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+body main #restaurants > div:nth-child(2) #image4-background:hover {
+  transition: 1s;
+  transform: scale(1.04);
+  cursor: pointer;
+  box-shadow: 0px 0px 7px 0px #0000002e;
+}
+body main #restaurants > div:nth-child(2) .new {
+  height: 30px;
+  width: 90px;
+  background-color: #99e2d0;
+  color: #008766;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 4px;
+  margin: 11px;
+  float: right;
+}
+body main #restaurants > div:nth-child(2) .flex-section3 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  align-content: space-between;
+  height: 60px;
+  margin: 0 14px;
+}
+body main .fas.fa-map-marker-alt::before {
+  line-height: 3;
+}
+body main .fas.fa-utensils::before {
+  margin-left: 4px;
+  margin-right: 12px;
+}
+body main .fas.fa-hands-helping::before {
+  margin-right: 10px;
+}
+body main .fas.fa-heart::before {
+  font-size: 25px;
+}
+body main .fas.fa-mobile-alt::before {
+  color: #7e7e7e;
+  margin: 0px 14px 10px 7px;
+  font-size: 20px;
+}
+body main .fas.fa-list-ul::before {
+  color: #7e7e7e;
+  margin: 50px 11px 10px -3px;
+  font-size: 20px;
+}
+body main .fas.fa-store::before {
+  color: #7e7e7e;
+  margin: 50px 9px 10px -2px;
+  font-size: 20px;
+}
+
+footer {
+  background-color: #353535;
+}
+footer > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+  padding: 7%;
+}
+footer > div:nth-child(2) {
+  display: flex;
+  justify-content: flex-start;
+  color: #ffffff;
+  margin: 0 auto;
+}
+footer p {
+  margin: 11px 0px;
+}
+footer h4 {
+  font-style: normal;
+  font-size: 1.17em;
+  margin: 0;
+  margin: 0px 7px 15px 0px;
+  font-weight: normal;
+}
+footer .fa-utensils::before {
+  margin-left: 4px;
+  margin-right: 12px;
+}
+footer .fa-hands-helping::before {
+  margin-right: 10px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
