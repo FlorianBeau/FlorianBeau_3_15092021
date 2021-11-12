@@ -1,4 +1,5 @@
 @import "../utils/normalize";
+@import "../utils/variables";
 
 // Polices //--------------------------------------------------------------
 * {
@@ -53,14 +54,28 @@ body {
     }
   }
   main {
-    #div-background {
+    div img {
+      height: 260px;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    #container-background {
       height: 400px;
+      max-width: 1200px;
+      background-color: #f2f2f2;
+      margin: -35px auto;
+      position: relative;
+      border-radius: 35px 35px;
+      display: flex;
+      justify-content: space-between;
+      box-shadow: 0px 0px 8px 0px;
     }
   }
 }
 // FOOTER--------------------------------------------------------------
 footer {
-  background-color: #353535;
+  background-color: $background-footer;
 
   > div:nth-child(1) {
     display: flex;
