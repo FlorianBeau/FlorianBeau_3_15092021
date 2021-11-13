@@ -351,6 +351,7 @@ h1 {
 
 h2 {
   padding-top: 20px;
+  font-family: "Shrikhand";
 }
 
 body {
@@ -363,21 +364,21 @@ body header {
 body header img {
   margin: 20px 0px;
 }
-body header #div-header {
+body header .div-header {
   display: block;
   flex-direction: row;
 }
-body header #div-header > div:first-child {
+body header .div-header > div:first-child {
   position: absolute;
   flex-direction: row;
 }
-body header #div-header > div:last-child {
+body header .div-header > div:last-child {
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-direction: row;
 }
-body header #div-header .fas.fa-arrow-left {
+body header .div-header .fas.fa-arrow-left {
   margin: 27px 0px 0px 21px;
   font-size: 20px;
   flex-direction: row;
@@ -389,16 +390,86 @@ body main div img {
   object-fit: cover;
   object-position: center;
 }
-body main #container-background {
-  height: 400px;
+body main .container-background {
   max-width: 1200px;
   background-color: #f2f2f2;
-  margin: -35px auto;
+  margin: -35px auto -24px;
   position: relative;
-  border-radius: 35px 35px;
+  border-radius: 2rem 2rem 0 0;
+  box-shadow: -1px -1px 3px 1px #0000002e;
+}
+body main .container-background h2 {
+  font-weight: normal;
+}
+body main .container-background > div:first-child {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  box-shadow: 0px 0px 8px 0px;
+  align-items: baseline;
+  margin: 0 1rem 0 1rem;
+}
+body main .container-background .far.fa-heart {
+  font-size: 27px;
+}
+body main .container-background > div:last-child {
+  position: relative;
+  margin: 0 1rem 0 1rem;
+}
+body main .container-background .entrees {
+  padding: 1rem 0;
+}
+body main .container-background h3 {
+  font-weight: normal;
+  position: relative;
+}
+body main .container-background h3::after {
+  content: "";
+  position: absolute;
+  bottom: -0.25rem;
+  left: 0;
+  width: 47px;
+  height: 3px;
+  background-color: #99e2d0;
+}
+body main .container-background .div-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+body main .container-background .card {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  overflow: hidden;
+}
+body main .container-background .contenu-card {
+  background-color: white;
+  display: flex;
+  padding: 1rem 1.5rem 1rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+body main .container-background .contenu-card-text {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 2.5rem;
+  justify-content: space-between;
+  max-width: 80%;
+}
+body main .container-background .card-hover {
+  width: 0;
+  background-color: #99e2d0;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  font-size: 1.5rem;
+  margin-right: -4rem;
+  transition: margin 300ms, width 300ms;
 }
 
 footer {
@@ -435,5 +506,10 @@ footer .fa-utensils::before {
 footer .fa-hands-helping::before {
   margin-right: 10px;
 }
+
+/* Media queries
+@media screen (min-whit{
+
+} */
 
 /*# sourceMappingURL=menus-restaurants.css.map */
