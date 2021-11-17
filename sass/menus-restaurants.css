@@ -390,13 +390,16 @@ body main div img {
   object-fit: cover;
   object-position: center;
 }
-body main .container-background {
+body main section {
   max-width: 1200px;
   background-color: #f2f2f2;
-  margin: -35px auto -24px;
+  margin: -35px auto 0;
+  box-shadow: -1px -1px 3px 1px #0000002e;
   position: relative;
   border-radius: 2rem 2rem 0 0;
-  box-shadow: -1px -1px 3px 1px #0000002e;
+}
+body main .container-background {
+  margin: 0 auto -24px;
 }
 body main .container-background h2 {
   font-weight: normal;
@@ -415,14 +418,26 @@ body main .container-background > div:last-child {
   position: relative;
   margin: 0 1rem 0 1rem;
 }
-body main .container-background .entrees {
-  padding: 1rem 0;
+body main .container-entrees {
+  margin: 0 auto;
 }
-body main .container-background h3 {
+body main .container-entrees .entrees {
+  padding: 10px 14px 0px;
+}
+body main .container-entrees .container-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 14px;
+  min-width: 300px;
+  max-width: 1200px;
+}
+body main .container-entrees h3 {
   font-weight: normal;
   position: relative;
 }
-body main .container-background h3::after {
+body main .container-entrees h3::after {
   content: "";
   position: absolute;
   bottom: -0.25rem;
@@ -431,51 +446,38 @@ body main .container-background h3::after {
   height: 3px;
   background-color: #99e2d0;
 }
-body main .container-background .div-cards {
+body main .container-entrees .div-cards {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 1rem;
 }
-body main .container-background .card {
-  width: 100%;
-  border-radius: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  display: flex;
-  overflow: hidden;
-}
-body main .container-background .contenu-card {
+body main .container-entrees .contenu-card {
   background-color: white;
   display: flex;
   padding: 1rem 1.5rem 1rem 1rem;
   justify-content: space-between;
   align-items: center;
-  flex: 1;
+  border-radius: 17px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-body main .container-background .contenu-card-text {
+body main .container-entrees .contenu-card-text {
   display: flex;
-  flex: 1;
   flex-direction: column;
   height: 2.5rem;
   justify-content: space-between;
-  max-width: 80%;
 }
-body main .container-background .card-hover {
-  width: 0;
+body main .container-entrees .card-hover {
   background-color: #99e2d0;
   color: white;
   justify-content: center;
   align-items: center;
   display: flex;
-  height: 100%;
   font-size: 1.5rem;
-  margin-right: -4rem;
   transition: margin 300ms, width 300ms;
 }
-
-footer {
+body footer {
   background-color: #353535;
 }
-footer > div:nth-child(1) {
+body footer > div:nth-child(1) {
   display: flex;
   flex-direction: column;
   max-width: 1200px;
@@ -483,27 +485,27 @@ footer > div:nth-child(1) {
   color: white;
   padding: 7%;
 }
-footer > div:nth-child(2) {
+body footer > div:nth-child(2) {
   display: flex;
   justify-content: flex-start;
   color: #ffffff;
   margin: 0 auto;
 }
-footer p {
+body footer p {
   margin: 11px 0px;
 }
-footer h4 {
+body footer h4 {
   font-style: normal;
   font-size: 1.17em;
   margin: 0;
   margin: 0px 7px 15px 0px;
   font-weight: normal;
 }
-footer .fa-utensils::before {
+body footer .fa-utensils::before {
   margin-left: 4px;
   margin-right: 12px;
 }
-footer .fa-hands-helping::before {
+body footer .fa-hands-helping::before {
   margin-right: 10px;
 }
 
