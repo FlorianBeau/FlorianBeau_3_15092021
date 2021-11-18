@@ -397,6 +397,7 @@ body main section {
   box-shadow: -1px -1px 3px 1px #0000002e;
   position: relative;
   border-radius: 2rem 2rem 0 0;
+  height: auto;
 }
 body main .container-background {
   margin: 0 auto -24px;
@@ -418,26 +419,24 @@ body main .container-background > div:last-child {
   position: relative;
   margin: 0 1rem 0 1rem;
 }
-body main .container-entrees {
+body main .container-category {
   margin: 0 auto;
 }
-body main .container-entrees .entrees {
+body main .container-category .category {
   padding: 10px 14px 0px;
 }
-body main .container-entrees .container-cards {
+body main .container-category .container-cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
   padding: 14px;
-  min-width: 300px;
-  max-width: 1200px;
+  justify-content: space-between;
 }
-body main .container-entrees h3 {
+body main .container-category h3 {
   font-weight: normal;
   position: relative;
 }
-body main .container-entrees h3::after {
+body main .container-category h3::after {
   content: "";
   position: absolute;
   bottom: -0.25rem;
@@ -446,11 +445,13 @@ body main .container-entrees h3::after {
   height: 3px;
   background-color: #99e2d0;
 }
-body main .container-entrees .div-cards {
-  display: flex;
+body main .container-category .div-cards {
   flex-wrap: wrap;
+  height: 4rem;
+  margin: 1.5rem 0;
+  width: 100%;
 }
-body main .container-entrees .contenu-card {
+body main .container-category .contenu-card {
   background-color: white;
   display: flex;
   padding: 1rem 1.5rem 1rem 1rem;
@@ -459,13 +460,13 @@ body main .container-entrees .contenu-card {
   border-radius: 17px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-body main .container-entrees .contenu-card-text {
+body main .container-category .contenu-card-text {
   display: flex;
   flex-direction: column;
-  height: 2.5rem;
+  height: auto;
   justify-content: space-between;
 }
-body main .container-entrees .card-hover {
+body main .container-category .card-hover {
   background-color: #99e2d0;
   color: white;
   justify-content: center;
@@ -473,6 +474,26 @@ body main .container-entrees .card-hover {
   display: flex;
   font-size: 1.5rem;
   transition: margin 300ms, width 300ms;
+}
+body main .div-button {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+body main .button {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  line-height: 50px;
+  background: linear-gradient(#ff79da, #9356dc);
+  border-radius: 25px;
+  margin-bottom: 3em;
+  box-shadow: 0px 0px 7px 0px #0000002e;
+  cursor: pointer;
+}
+body main a {
+  color: white;
+  text-decoration: none;
 }
 body footer {
   background-color: #353535;
@@ -509,9 +530,10 @@ body footer .fa-hands-helping::before {
   margin-right: 10px;
 }
 
-/* Media queries
-@media screen (min-whit{
-
-} */
+@media screen and (min-width: 960px) {
+  body main .container-category .container-cards {
+    padding: 14px;
+  }
+}
 
 /*# sourceMappingURL=menus-restaurants.css.map */
