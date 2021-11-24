@@ -351,7 +351,7 @@ h1 {
 
 h2 {
   font-family: "Shrikhand";
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 h3 {
@@ -457,7 +457,6 @@ body main .container-category h3::after {
 body main .container-category .div-cards {
   flex-wrap: wrap;
   margin: 0.5rem 0;
-  width: 100%;
 }
 body main .container-category .contenu-card {
   background-color: white;
@@ -467,6 +466,8 @@ body main .container-category .contenu-card {
   align-items: flex-end;
   border-radius: 17px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 260px;
+  height: 60px;
 }
 body main .container-category .contenu-card-text {
   display: flex;
@@ -552,12 +553,6 @@ body footer .fa-utensils::before {
 }
 body footer .fa-hands-helping::before {
   margin-right: 10px;
-}
-
-@media screen and (min-width: 960px) {
-  body main .container-category .container-cards {
-    padding: 14px;
-  }
 }
 
 /*# sourceMappingURL=menus-restaurants.css.map */
