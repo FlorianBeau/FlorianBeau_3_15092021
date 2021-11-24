@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "sass-main": "sass --watch ./main.scss:./main.css",
-    "sass-menus": "sass --watch ./sass/menus-restaurants.scss:./sass/menus-restaurants.css"
+    "sass-menus": "sass --watch ./sass/menus-restaurants.scss:./sass/menus-restaurants.css",
+    "prefix-main": "postcss ./sass/style.css --use autoprefixer -d ./sass/prefixed/",
+    "prefix-menus": "postcss ./sass/menus-restaurants.css --use autoprefixer -d ./sass/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -13,6 +15,7 @@
   },
   "author": "",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/FlorianBeau/FlorianBeau_3_15092021/issues"
   },

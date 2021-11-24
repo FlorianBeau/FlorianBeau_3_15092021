@@ -13,13 +13,15 @@ h1 {
   font-size: 1.5em;
 }
 h2 {
-  padding-top: 20px;
   font-family: "Shrikhand";
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 h3 {
   font-weight: normal;
   margin: 0;
+}
+h4 {
+  font-weight: bold;
 }
 
 // Body //
@@ -105,7 +107,7 @@ body {
       margin: 0 auto;
 
       .category {
-        padding: 10px 14px 0px;
+        padding: 0px 14px 0px;
       }
 
       .container-cards {
@@ -140,9 +142,9 @@ body {
       .contenu-card {
         background-color: white;
         display: flex;
-        padding: 1rem 1.5rem 1rem 1rem;
+        padding: 1rem 1.5rem 1rem 0.7rem;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-end;
         border-radius: 17px;
         box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
       }
@@ -151,6 +153,13 @@ body {
         flex-direction: column;
         height: auto;
         justify-content: space-between;
+        h4 {
+          margin: 0;
+          font-size: 1.1rem;
+        }
+        p {
+          margin: 0;
+        }
       }
       .card-hover {
         background-color: #99e2d0;
@@ -160,6 +169,9 @@ body {
         display: flex;
         font-size: 1.5rem;
         transition: margin 300ms, width 300ms;
+      }
+      .contenu-card-prix {
+        font-weight: bold;
       }
     }
 
