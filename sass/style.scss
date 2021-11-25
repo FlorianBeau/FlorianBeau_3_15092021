@@ -250,6 +250,18 @@ body {
           justify-content: flex-end;
           align-items: center;
           font-size: 25px;
+
+          .far.fa-heart {
+            color: #ff79da;
+            cursor: pointer;
+          }
+
+          &:hover {
+            .far.fa-heart-pink::before {
+              opacity: 1;
+              cursor: pointer;
+            }
+          }
         }
 
         // Images section 3 //

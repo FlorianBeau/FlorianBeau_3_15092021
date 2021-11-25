@@ -364,7 +364,7 @@ h4 {
 }
 
 body {
-  min-width: 300px;
+  min-width: 307px;
 }
 body header {
   max-width: 1200px;
@@ -423,10 +423,11 @@ body main .container-background > div:first-child {
 }
 body main .container-background .far.fa-heart {
   font-size: 27px;
+  cursor: pointer;
 }
 body main .container-background > div:last-child {
   position: relative;
-  margin: 0 1rem 0 1rem;
+  margin: 0 2.6rem 0 1rem;
 }
 body main .container-category {
   margin: 0 auto;
@@ -455,8 +456,20 @@ body main .container-category h3::after {
   background-color: #99e2d0;
 }
 body main .container-category .div-cards {
+  display: flex;
+  flex: 1;
+  width: 100%;
   flex-wrap: wrap;
   margin: 0.5rem 0;
+}
+@media screen and (min-width: 344px) {
+  body main .container-category .div-cards {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0.5rem 0;
+  }
 }
 body main .container-category .contenu-card {
   background-color: white;
@@ -466,14 +479,23 @@ body main .container-category .contenu-card {
   align-items: flex-end;
   border-radius: 17px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 260px;
-  height: 60px;
+  width: 88%;
+  height: 40px;
+}
+@media screen and (min-width: 344px) {
+  body main .container-category .contenu-card {
+    width: 300px;
+  }
 }
 body main .container-category .contenu-card-text {
   display: flex;
   flex-direction: column;
   height: auto;
   justify-content: space-between;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 80%;
 }
 body main .container-category .contenu-card-text h4 {
   margin: 0;
