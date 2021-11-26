@@ -91,9 +91,17 @@ body {
         align-items: baseline;
         margin: 0 1rem 0 1rem;
       }
-      .far.fa-heart {
+
+      .icons {
         font-size: 27px;
-        cursor: pointer;
+        .fas.fa-heart {
+          font-size: 27px;
+          color: transparent;
+          &:hover {
+            cursor: pointer;
+            color: rgb(219, 138, 138);
+          }
+        }
       }
 
       > div:last-child {
@@ -140,6 +148,7 @@ body {
         width: 100%;
         flex-wrap: wrap;
         margin: 0.5rem 0;
+        justify-content: center;
 
         @media screen and (min-width: 344px) {
           display: flex;

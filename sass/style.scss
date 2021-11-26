@@ -244,22 +244,22 @@ body {
         }
 
         .icone-heart {
-          height: 85px;
-          width: 85px;
           display: flex;
           justify-content: flex-end;
           align-items: center;
-          font-size: 25px;
-
-          .far.fa-heart {
-            color: #ff79da;
-            cursor: pointer;
+          font-size: 1.75rem;
+          &:hover {
+            color: transparent;
           }
 
-          &:hover {
-            .far.fa-heart-pink::before {
-              opacity: 1;
+          .fas.fa-heart {
+            color: transparent;
+            position: absolute;
+            &:hover {
+              color: #9356dc;
               cursor: pointer;
+              transform: scale(1.15);
+              padding: 0px 1px 3px 0px;
             }
           }
         }

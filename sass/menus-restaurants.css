@@ -421,9 +421,16 @@ body main .container-background > div:first-child {
   align-items: baseline;
   margin: 0 1rem 0 1rem;
 }
-body main .container-background .far.fa-heart {
+body main .container-background .icons {
   font-size: 27px;
+}
+body main .container-background .icons .fas.fa-heart {
+  font-size: 27px;
+  color: transparent;
+}
+body main .container-background .icons .fas.fa-heart:hover {
   cursor: pointer;
+  color: #db8a8a;
 }
 body main .container-background > div:last-child {
   position: relative;
@@ -461,6 +468,7 @@ body main .container-category .div-cards {
   width: 100%;
   flex-wrap: wrap;
   margin: 0.5rem 0;
+  justify-content: center;
 }
 @media screen and (min-width: 344px) {
   body main .container-category .div-cards {

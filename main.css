@@ -545,20 +545,23 @@ body main #restaurants > div:nth-child(2) .card-restaurant {
   overflow: hidden;
 }
 body main #restaurants > div:nth-child(2) .icone-heart {
-  height: 85px;
-  width: 85px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  font-size: 25px;
+  font-size: 1.75rem;
 }
-body main #restaurants > div:nth-child(2) .icone-heart .far.fa-heart {
-  color: #ff79da;
-  cursor: pointer;
+body main #restaurants > div:nth-child(2) .icone-heart:hover {
+  color: transparent;
 }
-body main #restaurants > div:nth-child(2) .icone-heart:hover .far.fa-heart-pink::before {
-  opacity: 1;
+body main #restaurants > div:nth-child(2) .icone-heart .fas.fa-heart {
+  color: transparent;
+  position: absolute;
+}
+body main #restaurants > div:nth-child(2) .icone-heart .fas.fa-heart:hover {
+  color: #9356dc;
   cursor: pointer;
+  transform: scale(1.15);
+  padding: 0px 1px 3px 0px;
 }
 body main #restaurants > div:nth-child(2) #image1-background {
   background-image: url("./images/la-palette-du-gout.jpg");
