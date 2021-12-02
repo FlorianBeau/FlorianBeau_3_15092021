@@ -242,36 +242,18 @@ body {
           max-width: 440px;
           overflow: hidden;
         }
+
         // ICONE COEUR //
         .icon-heart {
           display: flex;
           justify-content: flex-end;
           align-items: center;
           font-size: 1.75rem;
-
-          // Icone coeur vide //
-          .far.fa-heart {
-            &:hover {
-              color: transparent;
+          .fa-heart {
+            .fas {
             }
-            &.icon-empty {
-              position: absolute;
+            .far {
             }
-          }
-
-          // Icone coeur plein //
-          .fas.fa-heart {
-            &:hover {
-              cursor: pointer;
-              transform: scale(1.15);
-              padding: 0px 1px 3px 0px;
-            }
-          }
-          .fas.fa-heart.icon-full {
-            background: linear-gradient(120deg, #9356dc 0%, #ff79da 100%);
-            background-clip: border-box;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
           }
         }
 

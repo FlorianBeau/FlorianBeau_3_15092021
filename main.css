@@ -550,23 +550,6 @@ body main #restaurants > div:nth-child(2) .icon-heart {
   align-items: center;
   font-size: 1.75rem;
 }
-body main #restaurants > div:nth-child(2) .icon-heart .far.fa-heart:hover {
-  color: transparent;
-}
-body main #restaurants > div:nth-child(2) .icon-heart .far.fa-heart.icon-empty {
-  position: absolute;
-}
-body main #restaurants > div:nth-child(2) .icon-heart .fas.fa-heart:hover {
-  cursor: pointer;
-  transform: scale(1.15);
-  padding: 0px 1px 3px 0px;
-}
-body main #restaurants > div:nth-child(2) .icon-heart .fas.fa-heart.icon-full {
-  background: linear-gradient(120deg, #9356dc 0%, #ff79da 100%);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 body main #restaurants > div:nth-child(2) #image1-background {
   background-image: url("./images/la-palette-du-gout.jpg");
   height: 200px;

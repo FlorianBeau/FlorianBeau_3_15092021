@@ -10,17 +10,15 @@ footer h4 {
   font-family: "Shrikhand", sans-serif;
 }
 h1 {
-  font-size: 1.5em;
-}
-h2 {
   font-family: "Shrikhand";
   margin-bottom: 2.5rem;
 }
-h3 {
+h2 {
   font-weight: normal;
   margin: 0;
+  position: relative;
 }
-h4 {
+h3 {
   font-weight: bold;
 }
 
@@ -127,12 +125,7 @@ body {
         justify-content: space-between;
       }
 
-      h3 {
-        font-weight: normal;
-        position: relative;
-      }
-
-      h3::after {
+      h2::after {
         content: "";
         position: absolute;
         bottom: -0.25rem;
@@ -183,7 +176,7 @@ body {
         white-space: nowrap;
         text-overflow: ellipsis;
         max-width: 80%;
-        h4 {
+        h3 {
           margin: 0;
           font-size: 1.1rem;
         }

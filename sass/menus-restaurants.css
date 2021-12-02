@@ -346,20 +346,17 @@ footer h4 {
 }
 
 h1 {
-  font-size: 1.5em;
-}
-
-h2 {
   font-family: "Shrikhand";
   margin-bottom: 2.5rem;
 }
 
-h3 {
+h2 {
   font-weight: normal;
   margin: 0;
+  position: relative;
 }
 
-h4 {
+h3 {
   font-weight: bold;
 }
 
@@ -449,11 +446,7 @@ body main .container-category .container-cards {
   padding: 14px;
   justify-content: space-between;
 }
-body main .container-category h3 {
-  font-weight: normal;
-  position: relative;
-}
-body main .container-category h3::after {
+body main .container-category h2::after {
   content: "";
   position: absolute;
   bottom: -0.25rem;
@@ -505,7 +498,7 @@ body main .container-category .contenu-card-text {
   text-overflow: ellipsis;
   max-width: 80%;
 }
-body main .container-category .contenu-card-text h4 {
+body main .container-category .contenu-card-text h3 {
   margin: 0;
   font-size: 1.1rem;
 }
