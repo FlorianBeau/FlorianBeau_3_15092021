@@ -249,11 +249,14 @@ body {
           justify-content: flex-end;
           align-items: center;
           font-size: 1.75rem;
-          .fa-heart {
-            .fas {
+
+          i:first-child {
+            &:hover {
+              opacity: 0;
             }
-            .far {
-            }
+          }
+          i:last-child {
+            position: absolute;
           }
         }
 

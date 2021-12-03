@@ -550,6 +550,12 @@ body main #restaurants > div:nth-child(2) .icon-heart {
   align-items: center;
   font-size: 1.75rem;
 }
+body main #restaurants > div:nth-child(2) .icon-heart i:first-child:hover {
+  opacity: 0;
+}
+body main #restaurants > div:nth-child(2) .icon-heart i:last-child {
+  position: absolute;
+}
 body main #restaurants > div:nth-child(2) #image1-background {
   background-image: url("./images/la-palette-du-gout.jpg");
   height: 200px;
