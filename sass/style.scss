@@ -76,10 +76,10 @@ body {
           }
 
           &:hover {
-            background: #ff79da;
             box-shadow: 0px 5px 7px 2px #0000002e;
-            transform: scale(1.04);
             cursor: pointer;
+            transition: transform 400ms;
+            background: #ff79da;
           }
         }
       }
@@ -139,7 +139,7 @@ body {
           }
           &:hover {
             box-shadow: 0px 0px 7px 0px #0000002e;
-            transform: scale(1.04);
+            transition: transform 400ms;
             cursor: pointer;
           }
         }
@@ -414,7 +414,7 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
     color: white;
-    padding: 7%;
+    padding: 3%;
   }
 
   > div:nth-child(2) {
@@ -424,15 +424,30 @@ footer {
     margin: 0 auto;
   }
 
-  p {
-    margin: 11px 0px;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    margin: 6px 0px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    :hover {
+      text-decoration: underline;
+    }
   }
 
   h4 {
     font-style: normal;
     font-size: 1.17em;
-    margin: 0;
-    margin: 0px 7px 15px 0px;
+    margin: 0px 7px 11px 0px;
     font-weight: normal;
   }
 
@@ -443,5 +458,11 @@ footer {
 
   .fa-hands-helping::before {
     margin-right: 10px;
+  }
+
+  .liens {
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 1rem;
   }
 }

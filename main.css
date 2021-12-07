@@ -406,10 +406,10 @@ body main #reservez > div:nth-child(2) > div:nth-child(3) > a {
   color: white;
 }
 body main #reservez > div:nth-child(2) > div:nth-child(3):hover {
-  background: #ff79da;
   box-shadow: 0px 5px 7px 2px #0000002e;
-  transform: scale(1.04);
   cursor: pointer;
+  transition: transform 400ms;
+  background: #ff79da;
 }
 body main #fonctionnement p {
   font-weight: bold;
@@ -458,7 +458,7 @@ body main #fonctionnement #container-fonctionnement .div-fonctionnement:hover {
 }
 body main #fonctionnement #container-fonctionnement .div-fonctionnement:hover {
   box-shadow: 0px 0px 7px 0px #0000002e;
-  transform: scale(1.04);
+  transition: transform 400ms;
   cursor: pointer;
 }
 body main #fonctionnement .div-fonctionnement #round-icon {
@@ -688,7 +688,7 @@ footer > div:nth-child(1) {
   max-width: 1200px;
   margin: 0 auto;
   color: white;
-  padding: 7%;
+  padding: 3%;
 }
 footer > div:nth-child(2) {
   display: flex;
@@ -696,14 +696,27 @@ footer > div:nth-child(2) {
   color: #ffffff;
   margin: 0 auto;
 }
-footer p {
-  margin: 11px 0px;
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+footer li {
+  margin: 6px 0px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+footer a :hover {
+  text-decoration: underline;
 }
 footer h4 {
   font-style: normal;
   font-size: 1.17em;
-  margin: 0;
-  margin: 0px 7px 15px 0px;
+  margin: 0px 7px 11px 0px;
   font-weight: normal;
 }
 footer .fa-utensils::before {
@@ -712,6 +725,11 @@ footer .fa-utensils::before {
 }
 footer .fa-hands-helping::before {
   margin-right: 10px;
+}
+footer .liens {
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 1rem;
 }
 
 * {
