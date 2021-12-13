@@ -356,6 +356,28 @@ h2 {
 body {
   margin: auto;
   min-width: 300px;
+  text-rendering: optimizeSpeed;
+}
+body .loader {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 10;
+  align-items: center;
+  animation: loaderDisplay 3.6s linear forwards;
+}
+body .loader .loader_spinner {
+  width: 75px;
+  height: 75px;
+  border-top-width: 4px;
+  border-color: transparent;
+  border-top-color: #ff79da;
+  border-style: solid;
+  border-radius: 50%;
+  animation: loaderSpin 1.2s ease 3, loaderColors 1.2s 3;
 }
 body header div {
   background: white;
@@ -386,7 +408,7 @@ body main #reservez > div:nth-child(2) {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: #f6f6f6;
+  background-color: #f2f2f2;
   padding: 0 6px;
 }
 body main #reservez > div:nth-child(2) > p {
@@ -448,7 +470,7 @@ body main #fonctionnement #container-fonctionnement .div-fonctionnement {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: #f6f6f6;
+  background-color: #f2f2f2;
   border-radius: 17px;
   margin: 10px 20px;
   transition: all 400ms;
@@ -496,7 +518,7 @@ body main #fonctionnement .div-fonctionnement #round-icon3 {
   align-items: center;
 }
 body main #restaurants {
-  background-color: #f6f6f6;
+  background-color: #f2f2f2;
   margin-top: 10px;
   margin: 30px 0px 0px 0px;
 }
@@ -511,7 +533,7 @@ body main #restaurants h2 {
   margin: 30px 10px;
 }
 body main #restaurants > div:nth-child(2) {
-  background-color: #f6f6f6;
+  background-color: #f2f2f2;
   margin-top: 10px;
   padding-bottom: 50px;
   margin: 0 auto;
@@ -579,10 +601,13 @@ body main #restaurants > div:nth-child(2) #image1-background {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   object-fit: cover;
+  transition: all 700ms;
 }
 body main #restaurants > div:nth-child(2) #image1-background:hover {
   cursor: pointer;
   box-shadow: 0px 0px 7px 0px #0000002e;
+  transition: all 700ms;
+  transform: scale(1.04);
 }
 body main #restaurants > div:nth-child(2) #image2-background {
   background-image: url("./images/la-note-enchantee.jpg");
@@ -592,10 +617,13 @@ body main #restaurants > div:nth-child(2) #image2-background {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   object-fit: cover;
+  transition: all 700ms;
 }
 body main #restaurants > div:nth-child(2) #image2-background:hover {
   cursor: pointer;
   box-shadow: 0px 0px 7px 0px #0000002e;
+  transition: all 700ms;
+  transform: scale(1.04);
 }
 body main #restaurants > div:nth-child(2) #image3-background {
   background-image: url("./images/a-la-francaise.jpg");
@@ -605,10 +633,13 @@ body main #restaurants > div:nth-child(2) #image3-background {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   object-fit: cover;
+  transition: all 700ms;
 }
 body main #restaurants > div:nth-child(2) #image3-background:hover {
   cursor: pointer;
   box-shadow: 0px 0px 7px 0px #0000002e;
+  transition: all 700ms;
+  transform: scale(1.04);
 }
 body main #restaurants > div:nth-child(2) #image4-background {
   background-image: url("./images/le-delice-des-sens.jpg");
@@ -618,10 +649,13 @@ body main #restaurants > div:nth-child(2) #image4-background {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   object-fit: cover;
+  transition: all 700ms;
 }
 body main #restaurants > div:nth-child(2) #image4-background:hover {
   cursor: pointer;
   box-shadow: 0px 0px 7px 0px #0000002e;
+  transition: all 700ms;
+  transform: scale(1.04);
 }
 body main #restaurants > div:nth-child(2) .new {
   height: 30px;
@@ -731,6 +765,33 @@ footer .liens {
 
 h1 h2 h3 h4 {
   font-family: "Shrikhand", sans-serif;
+}
+
+@keyframes loaderDisplay {
+  95% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes loaderSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loaderColors {
+  10% {
+    border-top-color: #ff79da;
+  }
+  35% {
+    border-top-color: #9356dc;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

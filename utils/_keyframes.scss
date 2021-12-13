@@ -1,0 +1,28 @@
+@keyframes loaderDisplay {
+  95% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes loaderSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loaderColors {
+  10% {
+    border-top-color: #ff79da;
+  }
+  35% {
+    border-top-color: #9356dc;
+  }
+}
