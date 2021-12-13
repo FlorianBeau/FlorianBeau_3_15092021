@@ -26,3 +26,13 @@
     border-top-color: #9356dc;
   }
 }
+@keyframes cardTranslationAnimation {
+  0% {
+    transform: translate(0.5rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

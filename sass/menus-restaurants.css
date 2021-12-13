@@ -374,6 +374,7 @@ footer h4 {
 h1 {
   font-family: "Shrikhand";
   margin-bottom: 2.5rem;
+  font-weight: 400;
 }
 
 h2 {
@@ -528,8 +529,8 @@ body main .container-category .contenu-card {
   align-items: flex-end;
   border-radius: 17px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 88%;
-  height: 40px;
+  min-width: 0;
+  max-width: 100%;
 }
 @media screen and (min-width: 344px) {
   body main .container-category .contenu-card {
@@ -561,6 +562,9 @@ body main .container-category .card-hover {
   display: flex;
   font-size: 1.5rem;
   transition: margin 300ms, width 300ms;
+  width: 0;
+  height: 100%;
+  margin-right: -4rem;
 }
 body main .container-category .contenu-card-prix {
   font-weight: bold;

@@ -13,6 +13,7 @@ footer h4 {
 h1 {
   font-family: "Shrikhand";
   margin-bottom: 2.5rem;
+  font-weight: 400;
 }
 h2 {
   font-weight: normal;
@@ -136,13 +137,16 @@ body {
 
     // Container-entrées //
 
+    // Div contenant catégorie //
     .container-category {
       margin: 0 auto;
 
+      // Div catégorie //
       .category {
         padding: 0px 14px 0px;
       }
 
+      // Div contenant cartes //
       .container-cards {
         display: flex;
         flex-direction: row;
@@ -161,6 +165,7 @@ body {
         background-color: #99e2d0;
       }
 
+      // Div carte //
       .div-cards {
         display: flex;
         flex: 1;
@@ -178,6 +183,7 @@ body {
         }
       }
 
+      // Contenu des cartes //
       .contenu-card {
         background-color: white;
         display: flex;
@@ -186,13 +192,15 @@ body {
         align-items: flex-end;
         border-radius: 17px;
         box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
-        width: 88%;
-        height: 40px;
+        min-width: 0;
+        max-width: 100%;
 
         @media screen and (min-width: 344px) {
           width: 300px;
         }
       }
+
+      // Textes des cartes //
       .contenu-card-text {
         display: flex;
         flex-direction: column;
@@ -210,6 +218,8 @@ body {
           margin: 0;
         }
       }
+
+      // Cartes au survol //
       .card-hover {
         background-color: #99e2d0;
         color: white;
@@ -218,12 +228,18 @@ body {
         display: flex;
         font-size: 1.5rem;
         transition: margin 300ms, width 300ms;
+        width: 0;
+        height: 100%;
+        margin-right: -4rem;
       }
+
+      // Prix des cartes //
       .contenu-card-prix {
         font-weight: bold;
       }
     }
 
+    // Bouton commander //
     .div-button {
       display: flex;
       justify-content: center;
