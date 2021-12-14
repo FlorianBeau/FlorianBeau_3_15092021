@@ -367,7 +367,7 @@ body .loader {
   position: fixed;
   z-index: 10;
   align-items: center;
-  animation: loaderDisplay 3.6s linear forwards;
+  animation: loaderDisplay 3000ms linear forwards;
 }
 body .loader .loader_spinner {
   width: 75px;
@@ -791,6 +791,16 @@ h1 h2 h3 h4 {
   }
   35% {
     border-top-color: #9356dc;
+  }
+}
+@keyframes cardTranslationAnimation {
+  0% {
+    transform: translate(0.5rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 

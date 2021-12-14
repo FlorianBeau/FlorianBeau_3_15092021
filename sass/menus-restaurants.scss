@@ -29,30 +29,6 @@ body {
   min-width: 307px;
   text-rendering: optimizeSpeed;
 
-  // Loader Spinner //
-  .loader {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    background-color: #ffffff;
-    position: fixed;
-    z-index: 10;
-    align-items: center;
-    animation: loaderDisplay 3.6s linear forwards;
-
-    .loader_spinner {
-      width: 75px;
-      height: 75px;
-      border-top-width: 4px;
-      border-color: transparent;
-      border-top-color: #ff79da;
-      border-style: solid;
-      border-radius: 50%;
-      animation: loaderSpin 1.2s ease 3, loaderColors 1.2s 3;
-    }
-  }
-
   header {
     max-width: 1200px;
     margin: 0 auto;
@@ -153,6 +129,8 @@ body {
         flex-wrap: wrap;
         padding: 14px;
         justify-content: space-between;
+        :hover {
+        }
       }
 
       h2::after {
@@ -173,25 +151,26 @@ body {
         flex-wrap: wrap;
         margin: 0.5rem 0;
         justify-content: center;
+        box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
+        border-radius: 17px;
+        background-color: white;
+        overflow: hidden;
 
         @media screen and (min-width: 344px) {
           display: flex;
           flex: 1;
           width: 100%;
           flex-wrap: wrap;
-          margin: 0.5rem 0;
+          margin: 0.5rem 1rem;
         }
       }
 
       // Contenu des cartes //
       .contenu-card {
-        background-color: white;
         display: flex;
         padding: 1rem 1.5rem 1rem 0.7rem;
         justify-content: space-between;
         align-items: flex-end;
-        border-radius: 17px;
-        box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
         min-width: 0;
         max-width: 100%;
 
@@ -206,16 +185,16 @@ body {
         flex-direction: column;
         height: auto;
         justify-content: space-between;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
         max-width: 80%;
         h3 {
-          margin: 0;
           font-size: 1.1rem;
         }
-        p {
+        p,
+        h3 {
           margin: 0;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
         }
       }
 
@@ -228,7 +207,7 @@ body {
         display: flex;
         font-size: 1.5rem;
         transition: margin 300ms, width 300ms;
-        width: 0;
+        width: 70px;
         height: 100%;
         margin-right: -4rem;
       }

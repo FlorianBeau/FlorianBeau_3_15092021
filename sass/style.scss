@@ -29,7 +29,7 @@ body {
     position: fixed;
     z-index: 10;
     align-items: center;
-    animation: loaderDisplay 3.6s linear forwards;
+    animation: loaderDisplay 3000ms linear forwards;
 
     .loader_spinner {
       width: 75px;
