@@ -398,7 +398,7 @@ h3 {
 }
 
 body {
-  min-width: 307px;
+  width: 100%;
   text-rendering: optimizeSpeed;
 }
 body header {
@@ -481,7 +481,7 @@ body main .container-category .container-cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 14px;
+  padding: 14px 0;
   justify-content: space-between;
 }
 body main .container-category h2::after {
@@ -497,24 +497,22 @@ body main .container-category .div-cards {
   display: flex;
   flex: 1;
   width: 100%;
-  flex-wrap: wrap;
-  margin: 0.5rem 0;
-  justify-content: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  min-width: 248px;
+  margin: 0.5rem 1rem;
+  justify-content: space-between;
   border-radius: 17px;
-  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
   overflow: hidden;
 }
-@media screen and (min-width: 344px) {
-  body main .container-category .div-cards {
-    display: flex;
-    flex: 1;
-    width: 100%;
-    flex-wrap: wrap;
-    margin: 0.5rem 1rem;
-  }
+body main .container-category .div-cards:hover {
+  cursor: pointer;
+}
+body main .container-category .div-cards:hover .card-hover {
+  margin-right: 0;
 }
 body main .container-category .contenu-card {
+  background-color: white;
   display: flex;
   padding: 1rem 1.5rem 1rem 0.7rem;
   justify-content: space-between;
@@ -522,17 +520,14 @@ body main .container-category .contenu-card {
   min-width: 0;
   max-width: 100%;
 }
-@media screen and (min-width: 344px) {
-  body main .container-category .contenu-card {
-    width: 300px;
-  }
-}
 body main .container-category .contenu-card-text {
   display: flex;
   flex-direction: column;
   height: auto;
   justify-content: space-between;
-  max-width: 80%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 body main .container-category .contenu-card-text h3 {
   font-size: 1.1rem;
@@ -540,9 +535,12 @@ body main .container-category .contenu-card-text h3 {
 body main .container-category .contenu-card-text p,
 body main .container-category .contenu-card-text h3 {
   margin: 0;
-  overflow: hidden;
-  white-space: nowrap;
   text-overflow: ellipsis;
+  overflow: hidden;
+}
+body main .container-category .div-slide {
+  display: flex;
+  align-items: center;
 }
 body main .container-category .card-hover {
   background-color: #99e2d0;
@@ -554,10 +552,11 @@ body main .container-category .card-hover {
   transition: margin 300ms, width 300ms;
   width: 70px;
   height: 100%;
-  margin-right: -4rem;
+  margin-right: -70px;
 }
 body main .container-category .contenu-card-prix {
   font-weight: bold;
+  padding-right: 10px;
 }
 body main .div-button {
   display: flex;

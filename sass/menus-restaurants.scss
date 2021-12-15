@@ -26,7 +26,7 @@ h3 {
 
 // Body //
 body {
-  min-width: 307px;
+  width: 100%;
   text-rendering: optimizeSpeed;
 
   header {
@@ -127,10 +127,8 @@ body {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        padding: 14px;
+        padding: 14px 0;
         justify-content: space-between;
-        :hover {
-        }
       }
 
       h2::after {
@@ -148,35 +146,30 @@ body {
         display: flex;
         flex: 1;
         width: 100%;
-        flex-wrap: wrap;
-        margin: 0.5rem 0;
-        justify-content: center;
-        box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
+        min-width: 248px;
+        margin: 0.5rem 1rem;
+        justify-content: space-between;
         border-radius: 17px;
-        background-color: white;
+        box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
+        background-color: #fff;
         overflow: hidden;
-
-        @media screen and (min-width: 344px) {
-          display: flex;
-          flex: 1;
-          width: 100%;
-          flex-wrap: wrap;
-          margin: 0.5rem 1rem;
+        &:hover {
+          cursor: pointer;
+          & .card-hover {
+            margin-right: 0;
+          }
         }
       }
 
       // Contenu des cartes //
       .contenu-card {
+        background-color: white;
         display: flex;
         padding: 1rem 1.5rem 1rem 0.7rem;
         justify-content: space-between;
         align-items: flex-end;
         min-width: 0;
         max-width: 100%;
-
-        @media screen and (min-width: 344px) {
-          width: 300px;
-        }
       }
 
       // Textes des cartes //
@@ -185,17 +178,24 @@ body {
         flex-direction: column;
         height: auto;
         justify-content: space-between;
-        max-width: 80%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
         h3 {
           font-size: 1.1rem;
         }
         p,
         h3 {
           margin: 0;
-          overflow: hidden;
-          white-space: nowrap;
           text-overflow: ellipsis;
+          overflow: hidden;
         }
+      }
+
+      // Container slide //
+      .div-slide {
+        display: flex;
+        align-items: center;
       }
 
       // Cartes au survol //
@@ -209,12 +209,13 @@ body {
         transition: margin 300ms, width 300ms;
         width: 70px;
         height: 100%;
-        margin-right: -4rem;
+        margin-right: -70px;
       }
 
       // Prix des cartes //
       .contenu-card-prix {
         font-weight: bold;
+        padding-right: 10px;
       }
     }
 
