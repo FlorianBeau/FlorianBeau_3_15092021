@@ -26,13 +26,23 @@
     border-top-color: #9356dc;
   }
 }
+
 @keyframes cardTranslationAnimation {
   0% {
-    transform: translate(0.5rem);
+    transform: translate(20.5rem);
     opacity: 0;
   }
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@keyframes checkrotation {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

@@ -27,8 +27,6 @@ h3 {
 // Body //
 body {
   width: 100%;
-  text-rendering: optimizeSpeed;
-
   header {
     max-width: 1200px;
     margin: 0 auto;
@@ -128,7 +126,7 @@ body {
         flex-direction: row;
         flex-wrap: wrap;
         padding: 14px 0;
-        justify-content: space-between;
+        justify-content: center;
       }
 
       h2::after {
@@ -147,6 +145,19 @@ body {
         flex: 1;
         width: 100%;
         min-width: 248px;
+        @media screen and (min-width: 560px) {
+          min-width: 348px;
+        }
+        @media screen and (min-width: 760px) {
+          &:last-child:nth-child(3) {
+            max-width: calc(50% - 2rem);
+          }
+        }
+        @media screen and (min-width: 1140px) {
+          &:last-child:nth-child(4) {
+            max-width: calc(33% - 2rem);
+          }
+        }
         margin: 0.5rem 1rem;
         justify-content: space-between;
         border-radius: 17px;
@@ -157,7 +168,22 @@ body {
           cursor: pointer;
           & .card-hover {
             margin-right: 0;
+            & .fa-check-circle {
+              transform: rotate(360deg);
+            }
           }
+        }
+        &:nth-child(1) {
+          animation: cardTranslationAnimation 500ms ease-out forwards;
+        }
+        &:nth-child(2) {
+          animation: cardTranslationAnimation 1000ms ease-out forwards;
+        }
+        &:nth-child(3) {
+          animation: cardTranslationAnimation 1500ms ease-out forwards;
+        }
+        &:nth-child(4) {
+          animation: cardTranslationAnimation 2000ms ease-out forwards;
         }
       }
 
@@ -206,10 +232,15 @@ body {
         align-items: center;
         display: flex;
         font-size: 1.5rem;
-        transition: margin 300ms, width 300ms;
+        transition: margin 0.3s;
         width: 70px;
         height: 100%;
         margin-right: -70px;
+        animation-delay: 150ms;
+      }
+
+      .fa-check-circle {
+        transition: transform 0.5s;
       }
 
       // Prix des cartes //
